@@ -4,7 +4,7 @@ This code is a daily stock screener I wrote that goes through all NYSE, NASDAQ a
 
 ### What is Ichimoku?
 
-The Ichimoku Cloud is a technical indicator used most commonly on financial securities to better understand current and future price action. The cloud is particularly useful because it has two leading spans that are plotted 26 periods ahead on the chart. These spans give an indication of the future trend prices may take, which when combined with other technical analysis tools, can be used to trade more profitably.
+The Ichimoku Cloud is a technical indicator used most commonly on financial securities to better understand current and future price action. The cloud is particularly useful because it has two leading spans that are plotted 26 periods ahead on the chart. These spans give an indication of the trend future prices may take, which when combined with other technical analysis tools, can be used to trade more profitably.
 
 [StockCharts explanation](http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:ichimoku_cloud)
 
@@ -18,7 +18,7 @@ Add your name in the A column of the [Google Sheet.](https://docs.google.com/spr
 
 ### When do I get the email?
 
-Sometime between 9-10pm EST. The screener takes about an hour to run and I try to wait a couple hours after market close so that yahoo finance can give me up to date historical data. Also, it is still a work in progress so occasionally errors stop it from running and I have to execute it manually.
+Sometime between 9-10pm EST Sunday-Thursday. The screener takes about an hour to run and I try to wait a couple hours after market close so that yahoo finance can give me up to date historical data. Also, it is still a work in progress so occasionally errors stop it from running and I have to execute it manually.
 
 ### Trading Advice
 
