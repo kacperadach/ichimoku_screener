@@ -1,0 +1,11 @@
+Daily Time Frame Ichimoku indicator screener for 2016-08-11
+Filtering stocks under 50 PE, over 1B market cap, over 500k vol and $10 pps
+
+
+Bullish Cross (Tenkan-sen, Kijun-sen cross):
+
+AAN, AON, BCE, BGS, BIDU, CVS, ENB, GES, HXL, KSS, M, PVH, STMP, UN, UPS, YNDX, 
+
+Bullish Cloud Fold:
+
+AER, CCE, COF, ING, WAL, WBS, WFC, 

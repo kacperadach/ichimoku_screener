@@ -1,0 +1,47 @@
+
+        <html>
+            <body>
+                <h2>Daily Time Frame Ichimoku screener for 2016-08-17
+</h2>
+                <h3></h3>
+                <p></p>
+                
+                <h3>Tenkan-Kijun Crosses:</h3>
+                <h4></h4>
+                <p></p>
+                <h4></h4>
+                <p></p>
+                <h4></h4>
+                <p></p>
+                <br>
+                <h3>Cloud Movement:</h3>
+                <h4></h4>
+                <p></p>
+                <h4></h4>
+                <p></p>
+            </body>
+        </html>
+    
+        <html>
+            <body>
+                <h2>Daily Time Frame Ichimoku screener for 2016-08-17
+</h2>
+                <h3>TK cross and Bullish Cloud Fold:</h3>
+                <p>['UE', 'ENR']</p>
+                <br>
+                <h3>Tenkan-Kijun Crosses:</h3>
+                <h4>Crosses above the cloud:</h4>
+                <p>'ADM', 'ALL', 'AZPN', 'BDX', 'BIG', 'BYD', 'CBSH', 'CINF', 'EAT', 'FULT', 'HLT', 'JNPR', 'JWN', 'KSS', 'LXP', 'MTB', 'OKS', 'PRU', 'RBC', 'RLJ', 'ST', 'TOL', 'VLY'</p>
+                <h4>Crosses inside the cloud:</h4>
+                <p>'BBBY', 'CHD', 'DISCA', 'DISH', 'ENR', 'FLS', 'KEYS', 'LYB', 'UE'</p>
+                <h4>Crosses below the cloud:</h4>
+                <p>'BWP', 'DF', 'GES', 'IBKR'</p>
+                <br>
+                <h3>Cloud Movement:</h3>
+                <h4>Bullish Price Action leaving the cloud:</h4>
+                <p>'AEE', 'BMS', 'BWP', 'CAA', 'CHD', 'D', 'DG', 'DUK', 'DY', 'GEL', 'IM', 'KAR', 'KIM', 'MKC', 'MO', 'PCG', 'PFE', 'PLAY', 'PMT', 'POR', 'RPT', 'SANM', 'TDS', 'UE', 'VMC', 'WDC', 'WM'</p>
+                <h4>Bullish Cloud Fold:</h4>
+                <p>'BIDU', 'ENB', 'ENR', 'GNRC', 'UE', 'WCC'</p>
+            </body>
+        </html>
+    

@@ -1,0 +1,76 @@
+
+        <html>
+            <body>
+                <h3>Daily Time Frame Ichimoku screener for 2016-08-16
+</h3>
+                <p>test</p>
+            </body>
+        </html>
+    
+        <html>
+            <body>
+                <h3>Daily Time Frame Ichimoku screener for 2016-08-16
+</h3>
+                <p>BBBY, M, SONC</p>
+            </body>
+        </html>
+    
+        <html>
+            <body>
+                <h3>Daily Time Frame Ichimoku screener for 2016-08-16
+</h3>
+                <p>BBBY, M, SONC</p>
+                ""
+            </body>
+        </html>
+    
+        <html>
+            <body>
+                <h3>Daily Time Frame Ichimoku screener for 2016-08-16
+</h3>
+                <p>None</p>
+                BBBY, M, SONC
+            </body>
+        </html>
+    
+        <html>
+            <body>
+                <h3>Daily Time Frame Ichimoku screener for 2016-08-16
+</h3>
+                <p></p>
+                BBBY, M, SONC
+            </body>
+        </html>
+    
+        <html>
+            <body>
+                <h3>Daily Time Frame Ichimoku screener for 2016-08-16
+</h3>
+                <p></p>
+                <h2>BBBY, M, SONC</h2>
+            </body>
+        </html>
+    
+        <html>
+            <body>
+                <h2>Daily Time Frame Ichimoku screener for 2016-08-16
+</h2>
+                <h4>TK cross and Bullish Cloud Fold:</h4>
+                <p>set('HBI', 'ENR', 'OKE', 'SEM')</p>
+                <br>
+                <h3>Tenkan-Kijun Crosses:</h3>
+                <h4>Crosses above the cloud:</h4>
+                <p>'BAM', 'BIG', 'CBSH', 'CFFN', 'COTY', 'DNKN', 'DSW', 'EAT', 'FL', 'FLEX', 'FULT', 'HLT', 'HON', 'HRB', 'JNPR', 'JWN', 'KORS', 'KSS', 'M', 'MCK', 'MENT', 'MMC', 'MRK', 'OKS', 'PVH', 'RL', 'ROK', 'SHOO', 'SON', 'SWKS', 'TCBI', 'TOT', 'UMPQ', 'UN', 'URBN', 'VLY', 'WFC'</p>
+                <h4>Crosses inside the cloud:</h4>
+                <p>'BBBY', 'CHD', 'DISH', 'ENR', 'EXPR', 'GWW', 'KEYS', 'OKE', 'SAN', 'SEM', 'SIG', 'TEF', 'TIF', 'VFC'</p>
+                <h4>Crosses below the cloud:</h4>
+                <p>'BBVA', 'DF', 'DRI', 'FOE', 'GES', 'GNRC', 'HBI', 'SCCO', 'WSM'</p>
+                <br>
+                <h4>Bullish Price Action leaving the cloud:</h4>
+                <p>'AEE', 'AEP', 'CHD', 'CMS', 'DY', 'EIX', 'GEL', 'GIII', 'IM', 'MKC', 'MO', 'NEE', 'NI', 'OGE', 'PLAY', 'PMT', 'POR', 'REG', 'SCG', 'SO', 'SYK', 'VGR', 'VZ', 'WDC'</p>
+                <br>
+                <h4>Bullish Cloud Fold:</h4>
+                <p>'ENB', 'ENR', 'HBI', 'NTRS', 'OKE', 'RCL', 'SEM', 'UNM', 'VC'</p>
+            </body>
+        </html>
+    

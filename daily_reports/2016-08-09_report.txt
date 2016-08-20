@@ -1,0 +1,15 @@
+Daily Time Frame Ichimoku indicator screener for 2016-08-09
+Filtering stocks under 50 PE, over 1B market cap, over 500k vol and $10 pps
+
+
+Two Buy Signals (Signal lines and cloud):
+
+
+
+Bullish Cross (Tenkan-sen, Kijun-sen cross):
+
+AET, AIV, AVB, BAM, CNC, CVE, DHR, DPS, FLIR, LPT, MTCH, NCR, OFC, PG, PPL, PSX, SJM, SONC, UDR, 
+
+Bullish Cloud Fold:
+
+ANF, FMER, KEY, 
