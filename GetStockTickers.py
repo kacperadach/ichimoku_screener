@@ -11,7 +11,7 @@ def get_all_tickers():
         tickers = _get_tickers_from_file(f)
         all_tickers += tickers
     return _filter_all_tickers(all_tickers)
-
+    #return ['CDK', 'CSX', 'CTXS', 'GM', 'HOPE', 'INTU', 'ISBC', 'NKE', 'NOK', 'UL', 'AET', 'FLS', 'PRI', 'RH', 'STMP']
 
 def _get_file_path_list():
     paths = []

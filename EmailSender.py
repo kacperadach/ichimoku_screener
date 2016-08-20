@@ -1,9 +1,10 @@
 import smtplib
 import datetime
 import os
-from collections import OrderedDict
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+
+from GoogleSheetsAPI import get_email_addresses
 
 COMMASPACE = ', '
 
@@ -12,8 +13,8 @@ def send_email(ichi_dict):
     msg['Subject'] = 'Ichimoku stock screener for {}'.format(datetime.datetime.now().isoformat().split("T")[0])
     # me == the sender's email address
     # family = the list of all recipients' email addresses
-    family = ['kacperadach@gmail.com', 'alec.d.long@gmail.com', 'tomdoppenheim@gmail.com']
-    msg['From'] = 'kacperadach@gmail.com'
+    family = get_email_addresses()
+    msg['From'] = 'ichimokuscreener@gmail.com'
     msg['To'] = COMMASPACE.join(family)
     message_body = get_message_body(ichi_dict)
     msg.attach(message_body)
@@ -21,15 +22,15 @@ def send_email(ichi_dict):
     s = smtplib.SMTP('smtp.gmail.com:587')
     s.ehlo()
     s.starttls()
-    s.login('kacperadach@gmail.com', 'onehalfofmullage')
-    s.sendmail('kacperadach@gmail.com', family, msg.as_string())
+    s.login(os.environ['EMAIL_ADDRESS'], os.environ['EMAIL_PASSWORD'])
+    s.sendmail(os.environ['EMAIL_ADDRESS'], family, msg.as_string())
     s.quit()
 
     write_daily_report(message_body)
 
 
 def write_daily_report(message_body):
-    daily_report_file = os.path.join(os.path.join(os.getcwd(), 'daily_reports'),
+    daily_report_file = os.path.join(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'daily_reports'),
                                      (datetime.datetime.now().isoformat().split("T")[0] + "_report.txt"))
     daily_report = open(daily_report_file, 'a')
     daily_report.write(message_body._payload)
@@ -38,7 +39,12 @@ def get_message_body(ichi_dict):
     title_text = "Daily Time Frame Ichimoku screener for {}\n".format(datetime.datetime.now().isoformat().split("T")[0])
     html_message = """
         <html>
-            <body>
+            <body style="margin: auto;
+                            width: 60%;
+                            border: 3px solid #c0c0c0;
+                            padding: 10px;
+                            font-family: Verdana;
+                            text-align: center">
                 <h2>{}</h2>
                 <br>
                 <h3>{}</h3>
@@ -57,6 +63,10 @@ def get_message_body(ichi_dict):
                 <p>{}</p>
                 <h4>{}</h4>
                 <p>{}</p>
+                <hr>
+                <footer>
+                    <p>{}</p>
+                </footer>
             </body>
         </html>
     """.format(title_text,
@@ -76,36 +86,10 @@ def get_message_body(ichi_dict):
                "" if not ichi_dict['price_leaving_cloud'] else str(ichi_dict['price_leaving_cloud']).replace("[", "").replace("]", "").replace("'", ""),
                "" if not ichi_dict['cloud_fold'] else "Bullish Cloud Fold:",
                "" if not ichi_dict['cloud_fold'] else str(ichi_dict['cloud_fold']).replace("[", "").replace("]", "").replace("'", ""),
+               get_message_footer()
                )
     return MIMEText(html_message, 'html')
 
-
-    # msg = "Daily Time Frame Ichimoku screener for {}\n".format(datetime.datetime.now().isoformat().split("T")[0])
-    # msg += "\n\n\n"
-    # if not not ichi_dict['overlap']:
-    #     msg += "TK cross and Bullish Cloud Fold:\n\n"
-    #     for ticker in ichi_dict['overlap']:
-    #         msg += ticker + ", "
-    # msg += "\n\nTenkan-Kijun Crosses:"
-    # if not not ichi_dict['cross_above']:
-    #     msg += "\n\nCrosses above the cloud:\n\n"
-    #     for ticker in ichi_dict['cross_above']:
-    #         msg += ticker + ", "
-    # if not not ichi_dict['cross_inside']:
-    #     msg += "\n\nCrosses inside the cloud:\n\n"
-    #     for ticker in ichi_dict['cross_inside']:
-    #         msg += ticker + ", "
-    # if not not ichi_dict['cross_below']:
-    #     msg += "\n\nCrosses below the cloud:\n\n"
-    #     for ticker in ichi_dict['cross_below']:
-    #         msg += ticker + ", "
-    # if not not ichi_dict['price_leaving_cloud']:
-    #     msg += "\n\n\nBullish Price Action leaving the cloud:\n\n"
-    #     for ticker in ichi_dict['price_leaving_cloud']:
-    #         msg += ticker + ", "
-    # if not not ichi_dict['cloud_fold']:
-    #     msg += "\n\nBullish Cloud Fold:\n\n"
-    #     for ticker in ichi_dict['cloud_fold']:
-    #         msg += ticker + ", "
-    # return MIMEText(msg, 'plain')
-
+def get_message_footer():
+    footer = "Don't want to get the hottest free Ichimoku Screener email available? Remove your email address from the <a href='https://docs.google.com/spreadsheets/d/1yJkEd5u12niaFBPlglZO63iM4nSf-SYaXaBFhVCWX8Q/edit'>Google Sheet</a>"
+    return footer

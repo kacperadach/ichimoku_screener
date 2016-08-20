@@ -13,13 +13,25 @@ def get_stock_data(ticker):
         today_string = today.isoformat().split("T")[0]
         start_date_string = start_date.isoformat().split("T")[0]
         data = s.get_historical(start_date_string, today_string)
-        if filter_stocks(s, data) or len(data) < 104:
+        if filter_stocks(s, data) or len(data) < 104 or not ensure_most_recent_data(data):
             return
         else:
             return data
     except:
         logger.error("Daily data not found for {}".format(ticker))
         return
+
+def ensure_most_recent_data(data):
+    today = datetime.today()
+    if today.weekday() < 5:
+        last_trading_day = today.isoformat().isoformat().split("T")[0]
+    elif today.weekday() == 5:
+        last_trading_day = (today - timedelta(days=1)).isoformat().split("T")[0]
+    else:
+        last_trading_day = (today - timedelta(days=2)).isoformat().split("T")[0]
+    return data[0]['Date'] == last_trading_day
+
+
 
 def filter_stocks(s, data):
     try:

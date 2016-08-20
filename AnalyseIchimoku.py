@@ -51,8 +51,8 @@ def price_action_leaving_cloud(today_cloud, yesterday_cloud, today_data, yesterd
         if today_cloud.is_cloud_green():
             comparison = today_cloud.leading_span_a
         else:
-            comparison = today_cloud.leading_span_b
-        if today_data['Close'] > comparison:
+            return False
+        if float(today_data['Close']) > comparison:
             return True
     return False
 
