@@ -2,6 +2,10 @@
 
 This code is a daily stock screener I wrote that goes through all NYSE, NASDAQ and AMEX stocks and calculates their ichimoku values to determine if an important price event has occured. It gathers the stock tickers and automatically sends an email to everyone on the [email list.](https://docs.google.com/spreadsheets/d/1yJkEd5u12niaFBPlglZO63iM4nSf-SYaXaBFhVCWX8Q/edit#gid=0)
 
+### Sample Email
+
+![alt text](https://github.com/kacperadach/ichimoku_screener/images/SampleIchimokuEmail.PNG "Sample Email")
+
 ### What is Ichimoku?
 
 The Ichimoku Cloud is a technical indicator used most commonly on financial securities to better understand current and future price action. The cloud is particularly useful because it has two leading spans that are plotted 26 periods ahead on the chart. These spans give an indication of the trend future prices may take, which when combined with other technical analysis tools, can be used to trade more profitably.
