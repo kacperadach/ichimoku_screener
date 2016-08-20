@@ -4,7 +4,7 @@ This code is a daily stock screener I wrote that goes through all NYSE, NASDAQ a
 
 ### Sample Email
 
-![alt text](https://github.com/kacperadach/ichimoku_screener/images/SampleIchimokuEmail.PNG "Sample Email")
+![alt text](https://github.com/kacperadach/ichimoku_screener/blob/master/images/SampleIchimokuEmail.PNG "Sample Email")
 
 ### What is Ichimoku?
 
