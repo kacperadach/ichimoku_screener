@@ -1,10 +1,10 @@
-from GetStockTickers import get_all_tickers
+from GetStockTickers import get_all_tickers_from_api
 from GetStockIchimoku import get_stock_ichimoku
 from constants import logger
 
 def analyze_ichimoku():
     cross_above, cross_inside, cross_below, price_leaving_cloud, cloud_fold = ([] for i in range(5))
-    tickers = get_all_tickers()
+    tickers = get_all_tickers_from_api()
     for t in tickers:
         logger.info("Analyzing ticker: {}".format(t))
         ichimoku_data = get_stock_ichimoku(t)
