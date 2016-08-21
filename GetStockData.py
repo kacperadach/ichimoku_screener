@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+from os import getenv
 
 from yahoo_finance import Share
 
@@ -39,11 +40,11 @@ def filter_stocks(s, data):
     try:
         if not data:
             return True
-        elif float(data[0]['Close']) <= 1 or \
+        elif not _over_min_stock_value(data[0]['Close']) or \
             not _over_market_cap_filter(s.get_market_cap()) or \
             not _over_pe_filter(s.get_price_earnings_ratio()) or \
             not s.get_avg_daily_volume() or \
-            float(s.get_avg_daily_volume()) < 400000 or \
+            not _over_volume_filter(s.get_avg_daily_volume()) or \
             (float(s.get_year_high()) * .99) <= float(data[0]['High']):
             return True
         else:
@@ -51,14 +52,35 @@ def filter_stocks(s, data):
     except:
         return True
 
+def _over_min_stock_value(last_close):
+    try:
+        return float(last_close) >= getenv('MIN_STOCK_VALUE', 1)
+    except:
+        return False
+
+def _over_volume_filter(volume):
+    try:
+        return float(volume) >= getenv('VOLUME_MIN', 400000)
+    except:
+        return False
+
 def _over_market_cap_filter(market_cap_string):
     try:
-        return market_cap_string[-1] == 'B'
-    except TypeError:
+        return _parse_market_cap_string(market_cap_string) >= getenv('MARKET_CAP_MIN', 1000000000)
+    except:
         return False
 
 def _over_pe_filter(pe_string):
     try:
-        return float(pe_string) < 50 and float(pe_string) > 0
+        return float(pe_string) < getenv('PE_MAX', 50) and float(pe_string) > getenv('PE_MIN', 0)
     except:
         return False
+
+def _parse_market_cap_string(market_cap_string):
+    if market_cap_string[-1].upper() == 'B':
+        return 1000000000 * float(market_cap_string[0:-1])
+    elif market_cap_string[-1].upper() == 'M':
+        return 1000000 * float(market_cap_string[0:-1])
+    else:
+        logger.info("Market cap not in millions or billions, {}".format(market_cap_string))
+        return 0
