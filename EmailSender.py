@@ -1,6 +1,6 @@
-import smtplib
-import datetime
-import os
+from smtplib import SMTP
+from datetime import datetime
+from os import environ, path
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -10,7 +10,7 @@ COMMASPACE = ', '
 
 def send_email(ichi_dict):
     msg = MIMEMultipart()
-    msg['Subject'] = 'Ichimoku stock screener for {}'.format(datetime.datetime.now().isoformat().split("T")[0])
+    msg['Subject'] = 'Ichimoku stock screener for {}'.format(datetime.now().isoformat().split("T")[0])
     # me == the sender's email address
     # family = the list of all recipients' email addresses
     family = get_email_addresses()
@@ -20,20 +20,20 @@ def send_email(ichi_dict):
     message_body = get_message_body(ichi_dict)
     msg.attach(message_body)
 
-    s = smtplib.SMTP('smtp.gmail.com:587')
+    s = SMTP('smtp.gmail.com:587')
     s.ehlo()
     s.starttls()
-    s.login(os.environ['EMAIL_ADDRESS'], os.environ['EMAIL_PASSWORD'])
-    s.sendmail(os.environ['EMAIL_ADDRESS'], family, msg.as_string())
+    s.login(environ['EMAIL_ADDRESS'], environ['EMAIL_PASSWORD'])
+    s.sendmail(environ['EMAIL_ADDRESS'], family, msg.as_string())
     s.quit()
 
     write_daily_report(message_body)
 
 
 def write_daily_report(message_body):
-    daily_report_file = os.path.join(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'daily_reports'),
-                                     (datetime.datetime.now().isoformat().split("T")[0] + "_report.txt"))
-    daily_report = open(daily_report_file, 'a')
+    daily_report_file = path.join(path.join(path.dirname(path.abspath(__file__)), 'daily_reports'),
+                                     (datetime.now().isoformat().split("T")[0] + "_report.txt"))
+    daily_report = open(daily_report_file, 'w')
     daily_report.write(strip_html_from_body(message_body._payload))
 
 def strip_html_from_body(payload):
@@ -45,12 +45,12 @@ def strip_html_from_body(payload):
         elif char == ">":
             in_html = False
         else:
-            if in_html:
+            if not in_html:
                 body_message += char
     return body_message
 
 def get_message_body(ichi_dict):
-    title_text = "Daily Time Frame Ichimoku screener for {}\n".format(datetime.datetime.now().isoformat().split("T")[0])
+    title_text = "Daily Time Frame Ichimoku screener for {}\n".format(datetime.now().isoformat().split("T")[0])
     html_message = """
         <html>
             <body style="background-image: url('https://raw.githubusercontent.com/kacperadach/ichimoku_screener/master/images/background_pattern.jpg');">

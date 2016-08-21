@@ -1,4 +1,4 @@
-import logging
+from logging import basicConfig, INFO, getLogger, StreamHandler
 from datetime import datetime
 from os import listdir, path, remove
 from sys import stdout
@@ -17,11 +17,11 @@ def delete_old_log():
 
 def generate_logger():
     file_name = datetime.now().isoformat().replace("T", "_").replace(":", "-").split(".")[0] + "_log.log"
-    logging.basicConfig(filename=path.join(BASE_PATH, "logs", file_name), level=logging.INFO)
+    basicConfig(filename=path.join(BASE_PATH, "logs", file_name), level=INFO)
     if len(listdir('logs')) > 3:
         delete_old_log()
-    ch = logging.StreamHandler(stdout)
-    logger = logging.getLogger(__name__)
+    ch = StreamHandler(stdout)
+    logger = getLogger(__name__)
     logger.addHandler(ch)
     return logger
 
