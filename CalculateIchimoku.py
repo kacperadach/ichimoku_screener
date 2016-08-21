@@ -1,4 +1,4 @@
-from ichimoku import ichimoku
+from Ichimoku import ichimoku
 
 def calculate_ichimoku(ticker, data):
     conversion_line = _calculate_lines(data[0:9])

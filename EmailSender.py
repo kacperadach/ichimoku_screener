@@ -34,7 +34,20 @@ def write_daily_report(message_body):
     daily_report_file = os.path.join(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'daily_reports'),
                                      (datetime.datetime.now().isoformat().split("T")[0] + "_report.txt"))
     daily_report = open(daily_report_file, 'a')
-    daily_report.write(message_body._payload)
+    daily_report.write(strip_html_from_body(message_body._payload))
+
+def strip_html_from_body(payload):
+    body_message = ""
+    in_html = False
+    for char in payload:
+        if char == "<":
+            in_html = True
+        elif char == ">":
+            in_html = False
+        else:
+            if in_html:
+                body_message += char
+    return body_message
 
 def get_message_body(ichi_dict):
     title_text = "Daily Time Frame Ichimoku screener for {}\n".format(datetime.datetime.now().isoformat().split("T")[0])
