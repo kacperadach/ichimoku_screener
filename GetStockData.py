@@ -2,7 +2,9 @@ from datetime import datetime, timedelta
 
 from yahoo_finance import Share
 
-from constants import logger
+from Logger import get_logger
+
+logger = get_logger()
 
 
 def get_stock_data(ticker):

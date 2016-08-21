@@ -14,6 +14,7 @@ def send_email(ichi_dict):
     # me == the sender's email address
     # family = the list of all recipients' email addresses
     family = get_email_addresses()
+    #family = ['kacperadach@gmail.com']
     msg['From'] = 'ichimokuscreener@gmail.com'
     msg['To'] = COMMASPACE.join(family)
     message_body = get_message_body(ichi_dict)
@@ -39,34 +40,37 @@ def get_message_body(ichi_dict):
     title_text = "Daily Time Frame Ichimoku screener for {}\n".format(datetime.datetime.now().isoformat().split("T")[0])
     html_message = """
         <html>
-            <body style="margin: auto;
+            <body style="background-image: url('https://raw.githubusercontent.com/kacperadach/ichimoku_screener/master/images/background_pattern.jpg');">
+                <div style="background-color: white;
+                            margin: auto;
                             width: 60%;
-                            border: 3px solid #c0c0c0;
+                            border: 5px solid #c0c0c0;
                             padding: 10px;
                             font-family: Verdana;
-                            text-align: center">
-                <h2>{}</h2>
-                <br>
-                <h3>{}</h3>
-                <p>{}</p>
-                {}
-                <h3>{}</h3>
-                <h4>{}</h4>
-                <p>{}</p>
-                <h4>{}</h4>
-                <p>{}</p>
-                <h4>{}</h4>
-                <p>{}</p>
-                {}
-                <h3>{}</h3>
-                <h4>{}</h4>
-                <p>{}</p>
-                <h4>{}</h4>
-                <p>{}</p>
-                <hr>
-                <footer>
+                            text-align: center;">
+                    <h2>{}</h2>
+                    <br>
+                    <h3>{}</h3>
                     <p>{}</p>
-                </footer>
+                    {}
+                    <h3>{}</h3>
+                    <h4>{}</h4>
+                    <p>{}</p>
+                    <h4>{}</h4>
+                    <p>{}</p>
+                    <h4>{}</h4>
+                    <p>{}</p>
+                    {}
+                    <h3>{}</h3>
+                    <h4>{}</h4>
+                    <p>{}</p>
+                    <h4>{}</h4>
+                    <p>{}</p>
+                    <hr>
+                    <footer>
+                        <p>{}</p>
+                    </footer>
+                </div>
             </body>
         </html>
     """.format(title_text,
@@ -91,5 +95,5 @@ def get_message_body(ichi_dict):
     return MIMEText(html_message, 'html')
 
 def get_message_footer():
-    footer = "Don't want to get the hottest free Ichimoku Screener email available? Remove your email address from the <a href='https://docs.google.com/spreadsheets/d/1yJkEd5u12niaFBPlglZO63iM4nSf-SYaXaBFhVCWX8Q/edit'>Google Sheet</a>"
+    footer = "Don't want to get the hottest free Ichimoku Screener email available? Remove your email address from the <a style='color: #3ba722; text-decoration: none;' href='https://docs.google.com/spreadsheets/d/1yJkEd5u12niaFBPlglZO63iM4nSf-SYaXaBFhVCWX8Q/edit'>Google Sheet</a>"
     return footer

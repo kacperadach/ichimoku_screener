@@ -3,8 +3,9 @@ from csv import reader
 from os import path
 from urllib2 import Request, urlopen, URLError
 
-from constants import logger
+from Logger import get_logger
 
+logger = get_logger()
 DIRNAME, _ = path.split(path.abspath(__file__))
 FILES = ["amex.txt", "nasdaq.txt", "nyse.txt"]
 
