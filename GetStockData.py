@@ -17,6 +17,7 @@ def get_stock_data(ticker):
         start_date_string = start_date.isoformat().split("T")[0]
         data = s.get_historical(start_date_string, today_string)
         if filter_stocks(s, data) or len(data) < 104 or not ensure_most_recent_data(data):
+            logger.info("Filtered data for {}".format(ticker))
             return
         else:
             return data
@@ -27,7 +28,7 @@ def get_stock_data(ticker):
 def ensure_most_recent_data(data):
     today = datetime.today()
     if today.weekday() < 5:
-        last_trading_day = today.isoformat().isoformat().split("T")[0]
+        last_trading_day = today.isoformat().split("T")[0]
     elif today.weekday() == 5:
         last_trading_day = (today - timedelta(days=1)).isoformat().split("T")[0]
     else:
@@ -54,25 +55,25 @@ def filter_stocks(s, data):
 
 def _over_min_stock_value(last_close):
     try:
-        return float(last_close) >= getenv('MIN_STOCK_VALUE', 1)
+        return float(last_close) >= float(getenv('MIN_STOCK_VALUE', 1))
     except:
         return False
 
 def _over_volume_filter(volume):
     try:
-        return float(volume) >= getenv('VOLUME_MIN', 400000)
+        return float(volume) >= float(getenv('VOLUME_MIN', 400000))
     except:
         return False
 
 def _over_market_cap_filter(market_cap_string):
     try:
-        return _parse_market_cap_string(market_cap_string) >= getenv('MARKET_CAP_MIN', 1000000000)
+        return _parse_market_cap_string(market_cap_string) >= float(getenv('MARKET_CAP_MIN', 1000000000))
     except:
         return False
 
 def _over_pe_filter(pe_string):
     try:
-        return float(pe_string) < getenv('PE_MAX', 50) and float(pe_string) > getenv('PE_MIN', 0)
+        return float(pe_string) < float(getenv('PE_MAX', 50)) and float(pe_string) > float(getenv('PE_MIN', 0))
     except:
         return False
 

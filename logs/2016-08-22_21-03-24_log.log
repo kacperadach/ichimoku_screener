@@ -1,0 +1,23 @@
+INFO:Logger:Starting ichimoku screener
+INFO:Logger:Filter Settings: {'volume_min': '400000', 'pe_min': '0', 'pe_max': '100', 'market_cap_min': '500000000', 'min_stock_value': '1'}
+INFO:Logger:Analyzing ticker: A
+ERROR:Logger:Daily data not found for A
+INFO:Logger:Analyzing ticker: AA
+INFO:Logger:Filtered data for AA
+INFO:Logger:Analyzing ticker: AAAP
+INFO:Logger:Filtered data for AAAP
+INFO:Logger:Analyzing ticker: AAC
+INFO:Logger:Filtered data for AAC
+INFO:Logger:Analyzing ticker: AAL
+INFO:Logger:Filtered data for AAL
+INFO:Logger:Analyzing ticker: AAMC
+INFO:Logger:Filtered data for AAMC
+INFO:Logger:Analyzing ticker: AAME
+INFO:Logger:Filtered data for AAME
+INFO:Logger:Analyzing ticker: AAN
+INFO:Logger:Filtered data for AAN
+INFO:Logger:Analyzing ticker: AAOI
+INFO:Logger:Filtered data for AAOI
+INFO:Logger:Analyzing ticker: AAON
+INFO:Logger:Filtered data for AAON
+INFO:Logger:Analyzing ticker: AAP
