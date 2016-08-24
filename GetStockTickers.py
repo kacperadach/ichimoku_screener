@@ -2,13 +2,37 @@ from re import findall
 from csv import reader
 from os import path
 from urllib2 import Request, urlopen, URLError
+from ftplib import FTP
 
 from Logger import get_logger
 
 logger = get_logger()
 DIRNAME, _ = path.split(path.abspath(__file__))
 FILES = ["amex.txt", "nasdaq.txt", "nyse.txt"]
+BASE_PATH = path.dirname(path.abspath(__file__))
 
+def get_all_tickers_from_ftp():
+    _write_all_tickers_from_ftp()
+    ticker_file = open(path.join(BASE_PATH, 'tickers/all_tickers.txt'), 'r')
+    all_tickers = []
+    for line in ticker_file:
+        ticker = line.split('|')[0]
+        if ticker.upper() != 'SYMBOL':
+            all_tickers.append(ticker)
+    logger.info("Found {} tickers using ftp".format(len(all_tickers)))
+    return _filter_all_tickers(all_tickers)
+
+
+def _write_all_tickers_from_ftp():
+    try:
+        ticker_file = open(path.join(BASE_PATH, 'tickers/all_tickers.txt'), 'wb')
+        ftp = FTP('ftp.nasdaqtrader.com')
+        ftp.login()
+        ftp.cwd('SymbolDirectory')
+        ftp.retrbinary('RETR {}'.format('nasdaqlisted.txt'), ticker_file.write)
+        ftp.retrbinary('RETR {}'.format('otherlisted.txt'), ticker_file.write)
+    except:
+        logger.error("Error retrieving tickers from NASDAQ ftp")
 
 def get_all_tickers_from_api():
     all_tickers = []
@@ -28,6 +52,7 @@ def get_all_tickers_from_api():
                     continue
         except URLError:
             logger.error("Error retrieving tickers from API")
+    logger.info("Found {} tickers using api".format(len(all_tickers)))
     return _filter_all_tickers(all_tickers)
 
 def _write_tickers_to_file(exchange, file_data_string):
@@ -44,6 +69,7 @@ def get_all_tickers_from_file():
     for f in _get_file_path_list():
         tickers = _get_tickers_from_file(f)
         all_tickers += tickers
+    logger.info("Found {} tickers using static file".format(len(all_tickers)))
     return _filter_all_tickers(all_tickers)
 
 def _get_file_path_list():
