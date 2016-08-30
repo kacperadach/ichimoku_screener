@@ -2,25 +2,25 @@
         
             
                 
-                    Daily Time Frame Ichimoku screener for 2016-08-23
+                    Daily Time Frame Ichimoku screener for 2016-08-25
 
                     
-                    TK cross and Bullish Cloud Fold:
-                    CCL, SANM
+                    
+                    
                     
                     Tenkan-Kijun Crosses:
                     Crosses above the cloud:
-                    ALLE, CNK, FLR, MON, NSC, PGTI, PHM, RLJ, TEVA, XRS
+                    K, NAVI, NXST, PEP, STI, SYT
                     Crosses inside the cloud:
-                    BECN, SQM
+                    CB, DISCK, PAY, SNI
                     Crosses below the cloud:
-                    ACN, CALM, COL, PM
+                    AF, CF, EWBC, FNB, GATX, IPG, MANH, MFC
                     
                     Cloud Movement:
                     Bullish Price Action leaving the cloud:
-                    ATVI, BMS, DHI, FIVE, KBH, LEN, PRI, SKT, TAP
+                    AIV, FCPT, K, RPT
                     Bullish Cloud Fold:
-                    PSX, SONC
+                    KFY
                     
                     
                         Don't want to get the hottest free Ichimoku Screener email available? Remove your email address from the Google Sheet
