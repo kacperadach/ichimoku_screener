@@ -5,10 +5,16 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from GoogleSheetsAPI import get_email_addresses
+from Logger import get_logger
+
+logger = get_logger()
 
 COMMASPACE = ', '
 
 def send_email(ichi_dict):
+    if is_empty_dict(ichi_dict):
+        logger.info("EMPTY DICTIONARY RECEIVED, NOT SENDING EMAIL")
+        return
     msg = MIMEMultipart()
     msg['Subject'] = 'Ichimoku stock screener for {}'.format(datetime.now().isoformat().split("T")[0])
     # me == the sender's email address
@@ -29,6 +35,11 @@ def send_email(ichi_dict):
 
     write_daily_report(message_body)
 
+def is_empty_dict(ichi_dict):
+    for _, val in ichi_dict.items():
+        if val:
+            return False
+    return True
 
 def write_daily_report(message_body):
     daily_report_file = path.join(path.join(path.dirname(path.abspath(__file__)), 'daily_reports'),
