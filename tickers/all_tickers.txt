@@ -626,7 +626,7 @@ CNAT|Conatus Pharmaceuticals Inc. - Common Stock|G|N|N|100|N|N
 CNBKA|Century Bancorp, Inc. - Class A Common Stock|Q|N|N|100|N|N
 CNCE|Concert Pharmaceuticals, Inc. - Common Stock|G|N|N|100|N|N
 CNCR|Loncar Cancer Immunotherapy ETF|G|N|N|100|Y|N
-CNET|ChinaNet Online Holdings, Inc. - Common Stock|S|N|D|100|N|N
+CNET|ChinaNet Online Holdings, Inc. - Common Stock|S|N|N|100|N|N
 CNFR|Conifer Holdings, Inc. - Common Stock|G|N|N|100|N|N
 CNIT|China Information Technology, Inc. - Ordinary Shares|Q|N|N|100|N|N
 CNMD|CONMED Corporation - Common Stock|Q|N|N|100|N|N
@@ -1032,7 +1032,6 @@ FCCO|First Community Corporation - Common Stock|S|N|N|100|N|N
 FCCY|1st Constitution Bancorp (NJ) - Common Stock|G|N|N|100|N|N
 FCEL|FuelCell Energy, Inc. - Common Stock|G|N|N|100|N|N
 FCFP|First Community Financial Partners, Inc. - Common Stock|S|N|N|100|N|N
-FCFS|First Cash Financial Services, Inc. - Common Stock|Q|N|N|100|N|N
 FCLF|First Clover Leaf Financial Corp. - Common Stock|S|N|N|100|N|N
 FCNCA|First Citizens BancShares, Inc. - Class A Common Stock|Q|N|N|100|N|N
 FCS|Fairchild Semiconductor International, Inc. - Common Stock|Q|N|N|100|N|N
@@ -2349,7 +2348,7 @@ QRVO|Qorvo, Inc. - Common Stock|Q|N|N|100|N|N
 QSII|Quality Systems, Inc. - Common Stock|Q|N|N|100|N|N
 QTEC|First Trust NASDAQ-100- Technology Index Fund|G|N|N|100|Y|N
 QTNT|Quotient Limited - Ordinary Shares|G|N|N|100|N|N
-QUIK|QuickLogic Corporation - Common Stock|G|N|N|100|N|N
+QUIK|QuickLogic Corporation - Common Stock|G|N|D|100|N|N
 QUMU|Qumu Corporation - Common Stock|Q|N|N|100|N|N
 QUNR|Qunar Cayman Islands Limited - American Depositary Shares|G|N|N|100|N|N
 QURE|uniQure N.V. - Ordinary Shares|Q|N|N|100|N|N
@@ -2410,7 +2409,6 @@ RILY|B. Riley Financial, Inc. - Common Stock|S|N|N|100|N|N
 RKDA|Arcadia Biosciences, Inc. - Common Stock|G|N|D|100|N|N
 RLJE|RLJ Entertainment, Inc. - Common Stock|S|N|D|100|N|N
 RLOG|Rand Logistics, Inc. - Common Stock|S|N|N|100|N|N
-RLYP|Relypsa, Inc. - Common Stock|Q|N|N|100|N|N
 RMBS|Rambus, Inc. - Common Stock|Q|N|N|100|N|N
 RMCF|Rocky Mountain Chocolate Factory, Inc. - Common Stock|G|N|N|100|N|N
 RMGN|RMG Networks Holding Corporation - Common Stock|S|N|N|100|N|N
@@ -3141,7 +3139,7 @@ ZWZZT|NASDAQ TEST STOCK|S|Y|N|100||N
 ZXYZ.A|Nasdaq Symbology Test Common Stock|Q|Y|N|100||N
 ZXZZT|NASDAQ TEST STOCK|G|Y|N|100||N
 ZYNE|Zynerba Pharmaceuticals, Inc. - Common Stock|G|N|N|100|N|N
-File Creation Time: 0901201618:02|||||
+File Creation Time: 0902201621:34|||||
 ACT Symbol|Security Name|Exchange|CQS Symbol|ETF|Round Lot Size|Test Issue|NASDAQ Symbol
 A|Agilent Technologies, Inc. Common Stock|N|A|N|100|N|A
 AA|Alcoa Inc. Common Stock|N|AA|N|100|N|AA
@@ -4077,7 +4075,6 @@ CS|Credit Suisse Group American Depositary Shares|N|CS|N|100|N|CS
 CSC|Computer Sciences Corporation Common Stock|N|CSC|N|100|N|CSC
 CSCR|Credit Suisse X-Links Commodity Rotation ETNs due June 15, 2033|P|CSCR|N|100|N|CSCR
 CSD|Guggenheim S&P Spin-Off ETF|P|CSD|Y|100|N|CSD
-CSH|Cash America International, Inc. Common Stock|N|CSH|N|100|N|CSH
 CSI|Cutwater Select Income Fund|N|CSI|N|100|N|CSI
 CSJ|iShares 1-3 Year Credit Bond ETF|P|CSJ|Y|100|N|CSJ
 CSL|Carlisle Companies Incorporated Common Stock|N|CSL|N|100|N|CSL
@@ -4782,6 +4779,7 @@ FCE.A|Forest City Realty Trust, Inc. Common Stock|N|FCE/A|N|100|N|FCE.A
 FCE.B|Forest City Realty Trust, Inc. Common Stock|N|FCE/B|N|100|N|FCE.B
 FCF|First Commonwealth Financial Corporation Common Stock|N|FCF|N|100|N|FCF
 FCFI|TrimTabs Intl Free-Cash Flow ETF|P|FCFI|Y|100|N|FCFI
+FCFS|First Cash, Inc. Common Stock|N|FCFS|N|100|N|FCFS
 FCG|First Trust ISE-Revere Natural Gas|P|FCG|Y|100|N|FCG
 FCH|FelCor Lodging Trust Incorporated Common Stock|N|FCH|N|100|N|FCH
 FCH$A|FelCor Lodging Trust Incorporated Preferred Stock|N|FCHpA|N|100|N|FCH-A
@@ -5464,7 +5462,6 @@ IBDQ|iShares iBonds Dec 2025 Term Corporate ETF|P|IBDQ|Y|100|N|IBDQ
 IBIO|iBio, Inc. Common Stock|A|IBIO|N|100|N|IBIO
 IBLN|Direxion iBillionaire Index ETF|P|IBLN|Y|100|N|IBLN
 IBM|International Business Machines Corporation Common Stock|N|IBM|N|100|N|IBM
-IBME|iShares iBonds  Sep 2016 Term Muni Bond ETF|P|IBME|Y|100|N|IBME
 IBMF|iShares iBonds Sep 2017 Term Muni Bond ETF|P|IBMF|Y|100|N|IBMF
 IBMG|iShares iBonds Sep 2018 Term Muni Bond ETF|P|IBMG|Y|100|N|IBMG
 IBMH|iShares iBonds Sep 2019 Term Muni Bond ETF|P|IBMH|Y|100|N|IBMH
@@ -6776,7 +6773,7 @@ PHDG|PowerShares S&P 500 Downside Hedged Portfolio|P|PHDG|Y|100|N|PHDG
 PHF|Pacholder High Yield Fund, Inc. Common Stock|A|PHF|N|100|N|PHF
 PHG|Koninklijke Philips N.V. NY Registry Shares|N|PHG|N|100|N|PHG
 PHH|PHH Corp Common Stock|N|PHH|N|100|N|PHH
-PHI|Philippine Long Distance Telephone Company Sponsored ADR|N|PHI|N|100|N|PHI
+PHI|PLDT Inc. Sponsored ADR|N|PHI|N|100|N|PHI
 PHK|Pimco High Income Fund Pimco High Income Fund|N|PHK|N|100|N|PHK
 PHM|PulteGroup, Inc. Common Stock|N|PHM|N|100|N|PHM
 PHO|PowerShares Water Resource Port|P|PHO|Y|100|N|PHO
@@ -8328,4 +8325,4 @@ ZTR|Zweig Total Return Fund, Inc. (The) Common Stock|N|ZTR|N|100|N|ZTR
 ZTS|Zoetis Inc. Class A Common Stock|N|ZTS|N|100|N|ZTS
 ZVV|NYSE ARCA test stock|P|ZVV|N|100|Y|ZVV
 ZX|China Zenix Auto International Limited American Depositary Shares, each representing four ordinary shares.|N|ZX|N|100|N|ZX
-File Creation Time: 0901201618:02||||||
+File Creation Time: 0902201621:34||||||

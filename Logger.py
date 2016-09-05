@@ -19,7 +19,7 @@ def delete_old_log():
 
 
 def generate_logger():
-    if len(listdir(path.join(BASE_PATH, "logs"))) > 2:
+    if len(listdir(path.join(BASE_PATH, "logs"))) > 4:
         delete_old_log()
     file_name = datetime.now().isoformat().replace("T", "_").replace(":", "-").split(".")[0] + "_log.log"
     basicConfig(filename=path.join(BASE_PATH, "logs", file_name), level=INFO)

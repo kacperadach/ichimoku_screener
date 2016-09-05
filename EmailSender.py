@@ -13,26 +13,26 @@ COMMASPACE = ', '
 
 def send_email(ichi_dict):
     if is_empty_dict(ichi_dict):
-        logger.info("EMPTY DICTIONARY RECEIVED, NOT SENDING EMAIL")
+        logger.info("Empty dictionary received, not sending email.")
         return
+
+    logger.info("Sending email, {} tickers found.".format(sum(len(v) for v in ichi_dict.itervalues())))
     msg = MIMEMultipart()
     msg['Subject'] = 'Ichimoku stock screener for {}'.format(datetime.now().isoformat().split("T")[0])
-    # me == the sender's email address
-    # family = the list of all recipients' email addresses
+    msg['From'] = environ['EMAIL_ADDRESS']
     family = get_email_addresses()
-    #family = ['kacperadach@gmail.com']
-    msg['From'] = 'ichimokuscreener@gmail.com'
     msg['To'] = COMMASPACE.join(family)
     message_body = get_message_body(ichi_dict)
     msg.attach(message_body)
 
-    s = SMTP('smtp.gmail.com:587')
+    s = SMTP('smtp.gmail.com:587')  # standard address + port for using gmail as stmp
     s.ehlo()
     s.starttls()
     s.login(environ['EMAIL_ADDRESS'], environ['EMAIL_PASSWORD'])
     s.sendmail(environ['EMAIL_ADDRESS'], family, msg.as_string())
     s.quit()
 
+    logger.info("Sent Email to {} addresses: {}". format(len(family), family))
     write_daily_report(message_body)
 
 def is_empty_dict(ichi_dict):

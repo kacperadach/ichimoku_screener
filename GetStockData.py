@@ -1,12 +1,12 @@
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from os import getenv
 
 from yahoo_finance import Share
 
 from Logger import get_logger
+from TradingHolidays import TRADING_HOLIDAYS
 
 logger = get_logger()
-
 
 def get_stock_data(ticker):
     try:
@@ -26,7 +26,9 @@ def get_stock_data(ticker):
         return
 
 def ensure_most_recent_data(data):
-    today = datetime.today()
+    today = date.today()
+    if today in TRADING_HOLIDAYS:
+        today = today - timedelta(days=1)
     if today.weekday() < 5:
         last_trading_day = today.isoformat().split("T")[0]
     elif today.weekday() == 5:
@@ -34,8 +36,6 @@ def ensure_most_recent_data(data):
     else:
         last_trading_day = (today - timedelta(days=2)).isoformat().split("T")[0]
     return data[0]['Date'] == last_trading_day
-
-
 
 def filter_stocks(s, data):
     try:

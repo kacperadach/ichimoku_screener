@@ -1,0 +1,31 @@
+
+        
+            
+                
+                    Daily Time Frame Ichimoku screener for 2016-09-05
+
+                    
+                    TK cross and Bullish Cloud Fold:
+                    RBA
+                    
+                    Tenkan-Kijun Crosses:
+                    Crosses above the cloud:
+                    AWH, BAH, CDK, EFX, FB, IBN, MDC, NSR, PBI, RPT, SEE, WWAV
+                    Crosses inside the cloud:
+                    SABR, SBUX, SCS, SEM, TRI
+                    Crosses below the cloud:
+                    ADP, ADPT, CHKP, CI, CMG, EPAM, ESRX, GNC, HAS, HIG, LVLT, MLNX, PPC, RCL, TLLP, WETF, WFM
+                    
+                    Cloud Movement:
+                    Bullish Price Action leaving the cloud:
+                    AMT, GNL, MOH, SBS, SE, SEE, SKM, TRI, XRS
+                    Bullish Cloud Fold:
+                    AF, CB, FOE, MEOH, UBS
+                    
+                    
+                        Don't want to get the hottest free Ichimoku Screener email available? Remove your email address from the Google Sheet
+                    
+                
+            
+        
+    
