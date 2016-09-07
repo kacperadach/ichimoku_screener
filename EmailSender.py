@@ -16,24 +16,32 @@ def send_email(ichi_dict):
         logger.info("Empty dictionary received, not sending email.")
         return
 
-    logger.info("Sending email, {} tickers found.".format(sum(len(v) for v in ichi_dict.itervalues())))
-    msg = MIMEMultipart()
-    msg['Subject'] = 'Ichimoku stock screener for {}'.format(datetime.now().isoformat().split("T")[0])
-    msg['From'] = environ['EMAIL_ADDRESS']
-    family = get_email_addresses()
-    msg['To'] = COMMASPACE.join(family)
+    logger.info("Writing Daily Report")
     message_body = get_message_body(ichi_dict)
-    msg.attach(message_body)
+    write_daily_report(message_body)
+    logger.info("Wrote Daily Report")
 
-    s = SMTP('smtp.gmail.com:587')  # standard address + port for using gmail as stmp
-    s.ehlo()
-    s.starttls()
-    s.login(environ['EMAIL_ADDRESS'], environ['EMAIL_PASSWORD'])
-    s.sendmail(environ['EMAIL_ADDRESS'], family, msg.as_string())
-    s.quit()
+    try:
+        logger.info("Sending email, {} tickers found.".format(sum(len(v) for v in ichi_dict.itervalues())))
+        msg = MIMEMultipart()
+        msg['Subject'] = 'Ichimoku stock screener for {}'.format(datetime.now().isoformat().split("T")[0])
+        msg['From'] = environ['EMAIL_ADDRESS']
+        family = get_email_addresses()
+        msg['To'] = COMMASPACE.join(family)
+        msg.attach(message_body)
+
+        s = SMTP('smtp.gmail.com:587')  # standard address + port for using gmail as stmp
+        s.ehlo()
+        s.starttls()
+        s.login(environ['EMAIL_ADDRESS'], environ['EMAIL_PASSWORD'])
+        s.sendmail(environ['EMAIL_ADDRESS'], family, msg.as_string())
+        s.quit()
+    except Exception, e:
+        logger.info("Error occurred while sending email: {}".format(e))
+
 
     logger.info("Sent Email to {} addresses: {}". format(len(family), family))
-    write_daily_report(message_body)
+
 
 def is_empty_dict(ichi_dict):
     for _, val in ichi_dict.items():
