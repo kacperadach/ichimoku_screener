@@ -29,6 +29,7 @@ def ensure_most_recent_data(data):
     today = date.today()
     if today in TRADING_HOLIDAYS:
         today = today - timedelta(days=1)
+    logger.info("Using {} as most recent trading day.".format(today))
     if today.weekday() < 5:
         last_trading_day = today.isoformat().split("T")[0]
     elif today.weekday() == 5:

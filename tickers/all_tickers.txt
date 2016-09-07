@@ -214,7 +214,6 @@ ARIS|ARI Network Services, Inc. - Common Stock|S|N|N|100|N|N
 ARKR|Ark Restaurants Corp. - Common Stock|G|N|N|100|N|N
 ARLP|Alliance Resource Partners, L.P. - Common Units Representing Limited Partnership Interests|Q|N|N|100|N|N
 ARLZ|Aralez Pharmaceuticals Inc. - Common Shares|Q|N|N|100|N|N
-ARMH|ARM Holdings plc - American Depositary Shares each representing 3 Ordinary Shares|Q|N|N|100|N|N
 ARNA|Arena Pharmaceuticals, Inc. - Common Stock|Q|N|N|100|N|N
 AROW|Arrow Financial Corporation - Common Stock|Q|N|N|100|N|N
 ARQL|ArQule, Inc. - Common Stock|G|N|N|100|N|N
@@ -659,7 +658,9 @@ COWN|Cowen Group, Inc. - Class A Common Stock|Q|N|N|100|N|N
 COWNL|Cowen Group, Inc. - 8.25% Senior Notes due 2021|Q|N|N|100|N|N
 COYN|COPsync, Inc. - Common Stock|S|N|D|100|N|N
 COYNW|COPsync, Inc. - Warrant|S|N|D|100|N|N
+CPAA|Conyers Park Acquisition Corp. - Class A Common Stock|S|N|N|100|N|N
 CPAAU|Conyers Park Acquisition Corp. - Unit|S|N|N|100|N|N
+CPAAW|Conyers Park Acquisition Corp. - Warrant|S|N|N|100|N|N
 CPAH|CounterPath Corporation - Common Stock|S|N|N|100|N|N
 CPHC|Canterbury Park Holding Corporation - Common Stock|G|N|N|100|N|N
 CPHD|CEPHEID - Common Stock|Q|N|N|100|N|N
@@ -3139,7 +3140,7 @@ ZWZZT|NASDAQ TEST STOCK|S|Y|N|100||N
 ZXYZ.A|Nasdaq Symbology Test Common Stock|Q|Y|N|100||N
 ZXZZT|NASDAQ TEST STOCK|G|Y|N|100||N
 ZYNE|Zynerba Pharmaceuticals, Inc. - Common Stock|G|N|N|100|N|N
-File Creation Time: 0902201621:34|||||
+File Creation Time: 0906201618:02|||||
 ACT Symbol|Security Name|Exchange|CQS Symbol|ETF|Round Lot Size|Test Issue|NASDAQ Symbol
 A|Agilent Technologies, Inc. Common Stock|N|A|N|100|N|A
 AA|Alcoa Inc. Common Stock|N|AA|N|100|N|AA
@@ -4342,7 +4343,6 @@ DRD|DRDGOLD Limited American Depositary Shares|N|DRD|N|100|N|DRD
 DRE|Duke Realty Corporation Common Stock|N|DRE|N|100|N|DRE
 DRH|Diamondrock Hospitality Company Common Stock|N|DRH|N|100|N|DRH
 DRI|Darden Restaurants, Inc. Common Stock|N|DRI|N|100|N|DRI
-DRII|Diamond Resorts International, Inc. Common Stock|N|DRII|N|100|N|DRII
 DRIP|Direxion Daily S&P Oil & Gas Exp. & Prod. Bear 3X Shares|P|DRIP|Y|100|N|DRIP
 DRN|Dexion Daily Real Estate Bull 3x Shares|P|DRN|Y|100|N|DRN
 DRQ|Dril-Quip, Inc. Common Stock|N|DRQ|N|100|N|DRQ
@@ -5050,6 +5050,7 @@ GGG|Graco Inc. Common Stock|N|GGG|N|100|N|GGG
 GGM|Guggenheim Credit Allocation Fund Common Shares of Beneficial Interest|N|GGM|N|100|N|GGM
 GGN|GAMCO Global Gold, Natural Resources & Income Trust|A|GGN|N|100|N|GGN
 GGN$B|GAMCO Global Gold, Natural Reources & Income Trust 5.00% Series B Cumulative 25.00 Liquidation Preference|A|GGNpB|N|100|N|GGN-B
+GGO.C|The Gabelli Go Anywhere Trust |A|GGO/C|N|100|N|GGO.C
 GGOV|ProShares German Sovereign Sub Soverign ETF|P|GGOV|Y|100|N|GGOV
 GGP|General Growth Properties, Inc. Common Stock|N|GGP|N|100|N|GGP
 GGP$A|General Growth Properties, Inc. Preferred Series A|N|GGPpA|N|100|N|GGP-A
@@ -5716,7 +5717,7 @@ JBR|Select Asset Inc. Corporate Backed Callable Trust Certificates, J.C. Penney 
 JBT|John Bean Technologies Corporation Common Stock|N|JBT|N|100|N|JBT
 JCAP|Jernigan Capital, Inc. Common Stock|N|JCAP|N|100|N|JCAP
 JCE|Nuveen Core Equity Alpha Fund Nuveen Core Equity Alpha Fund Common Shares of Beneficial Interest|N|JCE|N|100|N|JCE
-JCI|Johnson Controls, Inc. Common Stock|N|JCI|N|100|N|JCI
+JCI|Johnson Controls International plc Ordinary Share|N|JCI|N|100|N|JCI
 JCP|J.C. Penney Company, Inc. Holding Company Common Stock|N|JCP|N|100|N|JCP
 JDD|Nuveen Diversified Dividend and Income Fund Shares of Beneficial Interest|N|JDD|N|100|N|JDD
 JDG|WisdomTree Japan Quality Dividend Growth Fund|P|JDG|Y|100|N|JDG
@@ -6797,7 +6798,7 @@ PIZ|PowerShares DWA Developed Market Momentum Portfolio|P|PIZ|Y|100|N|PIZ
 PJC|Piper Jaffray Companies Common Stock|N|PJC|N|100|N|PJC
 PJH|Prudential Financial, Inc. 5.75% Junior Subordinated Notes due 2052|N|PJH|N|100|N|PJH
 PJP|PowerShares Dynamic Pharmaceuticals|P|PJP|Y|100|N|PJP
-PJS|PreferredPlus Trust Ser FAR 1 Tr Ctf|N|PJS|N|100|N|PJS
+PJS|PreferredPlus Trust Ser FAR 1 Tr Ctf|N|PJS/CL|N|100|N|PJS*
 PJT|PJT Partners Inc. Class A Common Stock|N|PJT|N|100|N|PJT
 PKB|PowerShares Dynamic Build & Construction|P|PKB|Y|100|N|PKB
 PKD|Parker Drilling Company Common Stock|N|PKD|N|100|N|PKD
@@ -7825,7 +7826,6 @@ TXT|Textron Inc. Common Stock|N|TXT|N|100|N|TXT
 TY|Tri Continental Corporation Common Stock|N|TY|N|100|N|TY
 TY$|Tri Continental Corporation Preferred Stock|N|TYp|N|100|N|TY-
 TYBS|Direxion Daily 20 Year Treasury Bear 1X Shares|P|TYBS|Y|100|N|TYBS
-TYC|Tyco International plc (Ireland) Ordinary Share|N|TYC|N|100|N|TYC
 TYD|Direxion Daily 10-Yr Treasury Bull 3x Shrs|P|TYD|Y|100|N|TYD
 TYG|Tortoise Energy Infrastructure Corporation Common Stock|N|TYG|N|100|N|TYG
 TYL|Tyler Technologies, Inc. Common Stock|N|TYL|N|100|N|TYL
@@ -8325,4 +8325,4 @@ ZTR|Zweig Total Return Fund, Inc. (The) Common Stock|N|ZTR|N|100|N|ZTR
 ZTS|Zoetis Inc. Class A Common Stock|N|ZTS|N|100|N|ZTS
 ZVV|NYSE ARCA test stock|P|ZVV|N|100|Y|ZVV
 ZX|China Zenix Auto International Limited American Depositary Shares, each representing four ordinary shares.|N|ZX|N|100|N|ZX
-File Creation Time: 0902201621:34||||||
+File Creation Time: 0906201618:02||||||
