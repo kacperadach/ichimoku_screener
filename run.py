@@ -5,8 +5,6 @@ from AnalyseIchimoku import analyze_ichimoku
 from EmailSender import send_email
 from Logger import get_logger
 
-from GetStockTickers import get_all_tickers_from_ftp
-
 logger = get_logger()
 
 def run():

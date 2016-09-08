@@ -1,0 +1,36 @@
+INFO:Logger:Starting ichimoku screener
+INFO:Logger:Filter Settings: {'volume_min': '400000', 'pe_min': '0', 'pe_max': '100', 'market_cap_min': '500000000', 'min_stock_value': '1'}
+INFO:Logger:Found 8326 tickers using ftp
+INFO:Logger:Analyzing ticker: A
+INFO:Logger:Using 2016-09-07 as most recent trading day.
+INFO:Logger:Filtered data for A
+INFO:Logger:Analyzing ticker: AA
+INFO:Logger:Filtered data for AA
+INFO:Logger:Analyzing ticker: AAAP
+INFO:Logger:Filtered data for AAAP
+INFO:Logger:Analyzing ticker: AAC
+INFO:Logger:Filtered data for AAC
+INFO:Logger:Analyzing ticker: AADR
+INFO:Logger:Filtered data for AADR
+INFO:Logger:Analyzing ticker: AAL
+INFO:Logger:Using 2016-09-07 as most recent trading day.
+INFO:Logger:Filtered data for AAL
+INFO:Logger:Analyzing ticker: AAMC
+INFO:Logger:Filtered data for AAMC
+INFO:Logger:Analyzing ticker: AAME
+INFO:Logger:Filtered data for AAME
+INFO:Logger:Analyzing ticker: AAN
+INFO:Logger:Using 2016-09-07 as most recent trading day.
+INFO:Logger:Filtered data for AAN
+INFO:Logger:Analyzing ticker: AAOI
+INFO:Logger:Filtered data for AAOI
+INFO:Logger:Analyzing ticker: AAON
+INFO:Logger:Filtered data for AAON
+INFO:Logger:Analyzing ticker: AAP
+INFO:Logger:Using 2016-09-07 as most recent trading day.
+INFO:Logger:Filtered data for AAP
+INFO:Logger:Analyzing ticker: AAPC
+INFO:Logger:Filtered data for AAPC
+INFO:Logger:Analyzing ticker: AAPL
+INFO:Logger:Using 2016-09-07 as most recent trading day.
+INFO:Logger:Analyzing ticker: AAT

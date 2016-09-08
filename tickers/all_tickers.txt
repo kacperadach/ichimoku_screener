@@ -740,7 +740,7 @@ CVBF|CVB Financial Corporation - Common Stock|Q|N|N|100|N|N
 CVCO|Cavco Industries, Inc. - Common Stock|Q|N|N|100|N|N
 CVCY|Central Valley Community Bancorp - Common Stock|S|N|N|100|N|N
 CVGI|Commercial Vehicle Group, Inc. - Common Stock|Q|N|N|100|N|N
-CVGW|Calavo Growers, Inc. - Common Stock|Q|N|N|100|N|N
+CVGW|Calavo Growers, Inc. - Common Stock|Q|N|D|100|N|N
 CVLT|CommVault Systems, Inc. - Common Stock|Q|N|N|100|N|N
 CVLY|Codorus Valley Bancorp, Inc - Common Stock|G|N|N|100|N|N
 CVTI|Covenant Transportation Group, Inc. - Class A Common Stock|Q|N|N|100|N|N
@@ -1540,7 +1540,7 @@ ITEK|Inotek Pharmaceuticals Corporation - Common Stock|G|N|N|100|N|N
 ITEQ|BlueStar TA-BIGITech Israel Technology ETF|G|N|N|100|Y|N
 ITI|Iteris, Inc. - Common Stock|S|N|N|100|N|N
 ITIC|Investors Title Company - Common Stock|Q|N|N|100|N|N
-ITRI|Itron, Inc. - Common Stock|Q|N|E|100|N|N
+ITRI|Itron, Inc. - Common Stock|Q|N|N|100|N|N
 ITRN|Ituran Location and Control Ltd. - Ordinary Shares|Q|N|N|100|N|N
 ITUS|ITUS Corporation - Common Stock|S|N|D|100|N|N
 IVAC|Intevac, Inc. - Common Stock|Q|N|N|100|N|N
@@ -1794,8 +1794,8 @@ MDRX|Allscripts Healthcare Solutions, Inc. - common stock|Q|N|N|100|N|N
 MDSO|Medidata Solutions, Inc. - Common Stock|Q|N|N|100|N|N
 MDSY|ModSys International Ltd. - Ordinary Shares|S|N|N|100|N|N
 MDVN|Medivation, Inc. - Common Stock|Q|N|N|100|N|N
-MDVX|Medovex Corp. - Common Stock|S|N|N|100|N|N
-MDVXW|Medovex Corp. - Class A Warrant|S|N|N|100|N|N
+MDVX|Medovex Corp. - Common Stock|S|N|D|100|N|N
+MDVXW|Medovex Corp. - Class A Warrant|S|N|D|100|N|N
 MDWD|MediWound Ltd. - Ordinary Shares|G|N|N|100|N|N
 MDXG|MiMedx Group, Inc - Common Stock|S|N|N|100|N|N
 MEDP|Medpace Holdings, Inc. - Common Stock|Q|N|N|100|N|N
@@ -2117,7 +2117,7 @@ OSHC|Ocean Shore Holding Co. - Common Stock|G|N|N|100|N|N
 OSIR|Osiris Therapeutics, Inc. - Common Stock|G|N|E|100|N|N
 OSIS|OSI Systems, Inc. - Common Stock|Q|N|N|100|N|N
 OSM|SLM Corporation - Medium Term Notes, Series A, CPI-Linked Notes due March 15, 2017|G|N|N|100|N|N
-OSN|Ossen Innovation Co., Ltd. - American Depositary Shares|S|N|D|100|N|N
+OSN|Ossen Innovation Co., Ltd. - American Depositary Shares|S|N|N|100|N|N
 OSTK|Overstock.com, Inc. - Common Stock|G|N|N|100|N|N
 OSUR|OraSure Technologies, Inc. - Common Stock|Q|N|N|100|N|N
 OTEL|Otelco Inc. - Common Stock|S|N|N|100|N|N
@@ -3140,7 +3140,7 @@ ZWZZT|NASDAQ TEST STOCK|S|Y|N|100||N
 ZXYZ.A|Nasdaq Symbology Test Common Stock|Q|Y|N|100||N
 ZXZZT|NASDAQ TEST STOCK|G|Y|N|100||N
 ZYNE|Zynerba Pharmaceuticals, Inc. - Common Stock|G|N|N|100|N|N
-File Creation Time: 0906201618:02|||||
+File Creation Time: 0907201621:33|||||
 ACT Symbol|Security Name|Exchange|CQS Symbol|ETF|Round Lot Size|Test Issue|NASDAQ Symbol
 A|Agilent Technologies, Inc. Common Stock|N|A|N|100|N|A
 AA|Alcoa Inc. Common Stock|N|AA|N|100|N|AA
@@ -4383,6 +4383,7 @@ DVA|DaVita Inc. Common Stock|N|DVA|N|100|N|DVA
 DVD|Dover Motorsports, Inc. Common Stock|N|DVD|N|100|N|DVD
 DVEM|WisdomTree Emerging Markets Dividend Fund|Z|DVEM|Y|100|N|DVEM
 DVHL|ETRACS 2xLeveraged Diversified High Income ETN|P|DVHL|N|100|N|DVHL
+DVMT|Dell Technologies Inc. Class V Common Stock|N|DVMT|N|100|N|DVMT
 DVN|Devon Energy Corporation Common Stock|N|DVN|N|100|N|DVN
 DVP|Deep Value ETF|P|DVP|Y|100|N|DVP
 DVY|iShares Select Dividend ETF|P|DVY|Y|100|N|DVY
@@ -4528,7 +4529,6 @@ EMAG|VanEck Vectors Emerging Markets Aggregate Bond ETF|P|EMAG|Y|100|N|EMAG
 EMAN|eMagin Corporation Common Stock|A|EMAN|N|100|N|EMAN
 EMB|iShares J,P. Morgan USD Emerging Markets Bond ETF|P|EMB|Y|100|N|EMB
 EMBH|iShares Interest Rate Hedged Emerging Markets Bond ETF|P|EMBH|Y|100|N|EMBH
-EMC|EMC Corporation Common Stock|N|EMC|N|100|N|EMC
 EMCR|EGShares Emerging Markets CORE ETF|P|EMCR|Y|100|N|EMCR
 EMD|Western Asset Emerging Markets Income Fund, Inc. Common Stock|N|EMD|N|100|N|EMD
 EMDD|EGShares EM Strategic Opportunities ETF|P|EMDD|Y|100|N|EMDD
@@ -4642,7 +4642,6 @@ ESE|ESCO Technologies Inc. Common Stock|N|ESE|N|100|N|ESE
 ESGN|Columbia Sustainable International Equity Income ETF|P|ESGN|Y|100|N|ESGN
 ESGS|Columbia Sustainable U.S. Equity Income ETF|P|ESGS|Y|100|N|ESGS
 ESGW|Columbia Sustainable Global Equity Income ETF|P|ESGW|Y|100|N|ESGW
-ESI|ITT Educational Services, Inc. Common Stock|N|ESI|N|100|N|ESI
 ESL|Esterline Technologies Corporation Common Stock|N|ESL|N|100|N|ESL
 ESNC|EnSync, Inc. Common Stock|A|ESNC|N|100|N|ESNC
 ESNT|Essent Group Ltd. Common Shares|N|ESNT|N|100|N|ESNT
@@ -8325,4 +8324,4 @@ ZTR|Zweig Total Return Fund, Inc. (The) Common Stock|N|ZTR|N|100|N|ZTR
 ZTS|Zoetis Inc. Class A Common Stock|N|ZTS|N|100|N|ZTS
 ZVV|NYSE ARCA test stock|P|ZVV|N|100|Y|ZVV
 ZX|China Zenix Auto International Limited American Depositary Shares, each representing four ordinary shares.|N|ZX|N|100|N|ZX
-File Creation Time: 0906201618:02||||||
+File Creation Time: 0907201621:33||||||

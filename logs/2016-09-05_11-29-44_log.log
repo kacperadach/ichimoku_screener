@@ -1,4 +1,0 @@
-INFO:Logger:Starting ichimoku screener
-INFO:Logger:Filter Settings: {'volume_min': '400000', 'pe_min': '0', 'pe_max': '100', 'market_cap_min': '500000000', 'min_stock_value': '1'}
-INFO:Logger:Found 8327 tickers using ftp
-INFO:Logger:Analyzing ticker: A

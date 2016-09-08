@@ -10,9 +10,10 @@ try:
 except ImportError:
     flags = None
 
-CLIENT_SECRET_FILE = 'json/client_secret.json'
-APPLICATION_NAME = 'ichimokuemaillist'
-SCOPES = 'https://www.googleapis.com/auth/spreadsheets.readonly'
+from Constants import CLIENT_SECRET_FILE, SCOPES, APPLICATION_NAME
+
+BASE_PATH = path.dirname(path.abspath(__file__))
+client_secret_path = path.join(BASE_PATH, CLIENT_SECRET_FILE)
 
 def get_credentials():
     home_dir = path.expanduser('~')
@@ -25,7 +26,7 @@ def get_credentials():
     store = file.Storage(credential_path)
     credentials = store.get()
     if not credentials or credentials.invalid:
-        flow = client.flow_from_clientsecrets(CLIENT_SECRET_FILE, SCOPES)
+        flow = client.flow_from_clientsecrets(client_secret_path, SCOPES)
         flow.user_agent = APPLICATION_NAME
         if flags:
             credentials = tools.run_flow(flow, store, flags)

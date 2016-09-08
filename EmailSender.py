@@ -1,30 +1,32 @@
 from smtplib import SMTP
-from datetime import datetime
-from os import environ, path
+from datetime import date
+from os import environ
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from GoogleSheetsAPI import get_email_addresses
+from Constants import COMMASPACE
 from Logger import get_logger
+from WriteDailyReport import write_daily_report
 
 logger = get_logger()
-
-COMMASPACE = ', '
 
 def send_email(ichi_dict):
     if is_empty_dict(ichi_dict):
         logger.info("Empty dictionary received, not sending email.")
         return
-
     logger.info("Writing Daily Report")
     message_body = get_message_body(ichi_dict)
     write_daily_report(message_body)
     logger.info("Wrote Daily Report")
+    logger.info("Sending email, {} tickers found.".format(sum(len(v) for v in ichi_dict.itervalues())))
+    send(ichi_dict, message_body)
 
+def send(ichi_dict, message_body):
+    logger.info("Sending email, {} tickers found.".format(sum(len(v) for v in ichi_dict.itervalues())))
     try:
-        logger.info("Sending email, {} tickers found.".format(sum(len(v) for v in ichi_dict.itervalues())))
         msg = MIMEMultipart()
-        msg['Subject'] = 'Ichimoku stock screener for {}'.format(datetime.now().isoformat().split("T")[0])
+        msg['Subject'] = 'Ichimoku stock screener for {}'.format(date.today().isoformat())
         msg['From'] = environ['EMAIL_ADDRESS']
         family = get_email_addresses()
         msg['To'] = COMMASPACE.join(family)
@@ -36,12 +38,9 @@ def send_email(ichi_dict):
         s.login(environ['EMAIL_ADDRESS'], environ['EMAIL_PASSWORD'])
         s.sendmail(environ['EMAIL_ADDRESS'], family, msg.as_string())
         s.quit()
+        logger.info("Sent Email to {} addresses: {}".format(len(family), family))
     except Exception, e:
         logger.info("Error occurred while sending email: {}".format(e))
-
-
-    logger.info("Sent Email to {} addresses: {}". format(len(family), family))
-
 
 def is_empty_dict(ichi_dict):
     for _, val in ichi_dict.items():
@@ -49,27 +48,8 @@ def is_empty_dict(ichi_dict):
             return False
     return True
 
-def write_daily_report(message_body):
-    daily_report_file = path.join(path.join(path.dirname(path.abspath(__file__)), 'daily_reports'),
-                                     (datetime.now().isoformat().split("T")[0] + "_report.txt"))
-    daily_report = open(daily_report_file, 'w')
-    daily_report.write(strip_html_from_body(message_body._payload))
-
-def strip_html_from_body(payload):
-    body_message = ""
-    in_html = False
-    for char in payload:
-        if char == "<":
-            in_html = True
-        elif char == ">":
-            in_html = False
-        else:
-            if not in_html:
-                body_message += char
-    return body_message
-
 def get_message_body(ichi_dict):
-    title_text = "Daily Time Frame Ichimoku screener for {}\n".format(datetime.now().isoformat().split("T")[0])
+    title_text = "Daily Time Frame Ichimoku screener for {}\n".format(date.today().isoformat())
     html_message = """
         <html>
             <body style="background-image: url('https://raw.githubusercontent.com/kacperadach/ichimoku_screener/master/images/background_pattern.jpg');">

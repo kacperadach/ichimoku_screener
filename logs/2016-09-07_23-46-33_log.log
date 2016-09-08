@@ -1,0 +1,82 @@
+INFO:Logger:Using 2016-09-07 as today.
+INFO:Logger:Using 2016-09-07 as most recent trading day.
+INFO:Logger:Starting ichimoku screener
+INFO:Logger:Filter Settings: {'volume_min': '400000', 'pe_min': '0', 'pe_max': '100', 'market_cap_min': '500000000', 'min_stock_value': '1'}
+INFO:Logger:Found 8326 tickers using ftp
+INFO:Logger:Analyzing ticker: A
+INFO:Logger:Analyzing ticker: AA
+INFO:Logger:Filtered data for AA
+INFO:Logger:Analyzing ticker: AAAP
+INFO:Logger:Filtered data for AAAP
+INFO:Logger:Analyzing ticker: AAC
+INFO:Logger:Filtered data for AAC
+INFO:Logger:Analyzing ticker: AADR
+INFO:Logger:Filtered data for AADR
+INFO:Logger:Analyzing ticker: AAL
+INFO:Logger:Analyzing ticker: AAMC
+INFO:Logger:Filtered data for AAMC
+INFO:Logger:Analyzing ticker: AAME
+INFO:Logger:Filtered data for AAME
+INFO:Logger:Analyzing ticker: AAN
+INFO:Logger:Analyzing ticker: AAOI
+INFO:Logger:Filtered data for AAOI
+INFO:Logger:Analyzing ticker: AAON
+INFO:Logger:Filtered data for AAON
+INFO:Logger:Analyzing ticker: AAP
+INFO:Logger:Analyzing ticker: AAPC
+INFO:Logger:Filtered data for AAPC
+INFO:Logger:Analyzing ticker: AAPL
+INFO:Logger:Filtered data for AAPL
+INFO:Logger:Analyzing ticker: AAT
+INFO:Logger:Filtered data for AAT
+INFO:Logger:Analyzing ticker: AAU
+INFO:Logger:Filtered data for AAU
+INFO:Logger:Analyzing ticker: AAV
+INFO:Logger:Filtered data for AAV
+INFO:Logger:Analyzing ticker: AAWW
+INFO:Logger:Filtered data for AAWW
+INFO:Logger:Analyzing ticker: AAXJ
+INFO:Logger:Filtered data for AAXJ
+INFO:Logger:Analyzing ticker: AB
+INFO:Logger:Filtered data for AB
+INFO:Logger:Analyzing ticker: ABAC
+INFO:Logger:Filtered data for ABAC
+INFO:Logger:Analyzing ticker: ABAX
+INFO:Logger:Filtered data for ABAX
+INFO:Logger:Analyzing ticker: ABB
+INFO:Logger:Filtered data for ABB
+INFO:Logger:Analyzing ticker: ABBV
+INFO:Logger:Filtered data for ABBV
+INFO:Logger:Analyzing ticker: ABC
+INFO:Logger:Analyzing ticker: ABCB
+INFO:Logger:Filtered data for ABCB
+INFO:Logger:Analyzing ticker: ABCD
+INFO:Logger:Filtered data for ABCD
+INFO:Logger:Analyzing ticker: ABCO
+INFO:Logger:Filtered data for ABCO
+INFO:Logger:Analyzing ticker: ABDC
+INFO:Logger:Filtered data for ABDC
+INFO:Logger:Analyzing ticker: ABE
+INFO:Logger:Filtered data for ABE
+INFO:Logger:Analyzing ticker: ABEO
+INFO:Logger:Filtered data for ABEO
+INFO:Logger:Analyzing ticker: ABEOW
+INFO:Logger:Filtered data for ABEOW
+INFO:Logger:Analyzing ticker: ABEV
+INFO:Logger:Analyzing ticker: ABG
+INFO:Logger:Filtered data for ABG
+INFO:Logger:Analyzing ticker: ABIL
+INFO:Logger:Filtered data for ABIL
+INFO:Logger:Analyzing ticker: ABIO
+INFO:Logger:Filtered data for ABIO
+INFO:Logger:Analyzing ticker: ABM
+INFO:Logger:Filtered data for ABM
+INFO:Logger:Analyzing ticker: ABMD
+INFO:Logger:Filtered data for ABMD
+INFO:Logger:Analyzing ticker: ABR
+INFO:Logger:Filtered data for ABR
+INFO:Logger:Analyzing ticker: ABRN
+INFO:Logger:Filtered data for ABRN
+INFO:Logger:Analyzing ticker: ABT
+INFO:Logger:Filtered data for ABT
+INFO:Logger:Analyzing ticker: ABTL

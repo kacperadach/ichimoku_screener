@@ -4,9 +4,10 @@ from os import getenv
 from yahoo_finance import Share
 
 from Logger import get_logger
-from TradingHolidays import TRADING_HOLIDAYS
+from MostRecentTradingDay import get_most_recent_trading_day
 
 logger = get_logger()
+LAST_TRADING_DAY = get_most_recent_trading_day()
 
 def get_stock_data(ticker):
     try:
@@ -16,7 +17,7 @@ def get_stock_data(ticker):
         today_string = today.isoformat().split("T")[0]
         start_date_string = start_date.isoformat().split("T")[0]
         data = s.get_historical(start_date_string, today_string)
-        if filter_stocks(s, data) or len(data) < 104 or not ensure_most_recent_data(data):
+        if filter_stocks(s, data) or len(data) < 104 or not ensure_most_recent_data(data, LAST_TRADING_DAY):
             logger.info("Filtered data for {}".format(ticker))
             return
         else:
@@ -25,17 +26,7 @@ def get_stock_data(ticker):
         logger.error("Daily data not found for {}".format(ticker))
         return
 
-def ensure_most_recent_data(data):
-    today = date.today()
-    if today in TRADING_HOLIDAYS:
-        today = today - timedelta(days=1)
-    logger.info("Using {} as most recent trading day.".format(today))
-    if today.weekday() < 5:
-        last_trading_day = today.isoformat().split("T")[0]
-    elif today.weekday() == 5:
-        last_trading_day = (today - timedelta(days=1)).isoformat().split("T")[0]
-    else:
-        last_trading_day = (today - timedelta(days=2)).isoformat().split("T")[0]
+def ensure_most_recent_data(data, last_trading_day):
     return data[0]['Date'] == last_trading_day
 
 def filter_stocks(s, data):
