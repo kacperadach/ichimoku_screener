@@ -229,7 +229,6 @@ ARWAW|Arowana Inc. - warrant|S|N|N|100|N|N
 ARWR|Arrowhead Pharmaceuticals, Inc. - Common Stock|Q|N|N|100|N|N
 ASBB|ASB Bancorp, Inc. - Common Stock|G|N|N|100|N|N
 ASCMA|Ascent Capital Group, Inc. - Series A Common Stock|Q|N|N|100|N|N
-ASEI|American Science and Engineering, Inc. - Common Stock|Q|N|N|100|N|N
 ASET|FlexShares Real Assets Allocation Index Fund|G|N|N|100|Y|N
 ASFI|Asta Funding, Inc. - Common Stock|Q|N|N|100|N|N
 ASMB|Assembly Biosciences, Inc. - Common Stock|S|N|N|100|N|N
@@ -869,6 +868,7 @@ DXTR|Dextera Surgical Inc. - Common Stock|S|N|N|100|N|N
 DXYN|The Dixie Group, Inc. - Common Stock|G|N|N|100|N|N
 DYNT|Dynatronics Corporation - Common Stock|S|N|N|100|N|N
 DYSL|Dynasil Corporation of America - Common Stock|S|N|N|100|N|N
+DZSI|DASAN Zhone Solutions, Inc. - Common Stock|S|N|N|100|N|N
 EA|Electronic Arts Inc. - Common Stock|Q|N|N|100|N|N
 EAC|Erickson Incorporated - Common Stock|G|N|D|100|N|N
 EACQ|Easterly Acquisition Corp. - Common Stock|S|N|N|100|N|N
@@ -3086,7 +3086,6 @@ XRAY|DENTSPLY SIRONA Inc. - Common Stock|Q|N|N|100|N|N
 XRDC|Crossroads Capital, Inc. - Common Stock|S|N|N|100|N|N
 XTLB|XTL Biopharmaceuticals Ltd. - American Depositary Shares|S|N|N|100|N|N
 XXIA|Ixia - Common Stock|Q|N|N|100|N|N
-YCB|Your Community Bankshares, Inc. - Common Stock|S|N|N|100|N|N
 YDIV|First Trust International Multi-Asset Diversified Income Index Fund|G|N|N|100|Y|N
 YECO|Yulong Eco-Materials Limited - Ordinary Shares|S|N|N|100|N|N
 YHOO|Yahoo! Inc. - Common Stock|Q|N|N|100|N|N
@@ -3110,7 +3109,6 @@ ZEUS|Olympic Steel, Inc. - Common Stock|Q|N|N|100|N|N
 ZFGN|Zafgen, Inc. - Common Stock|Q|N|N|100|N|N
 ZG|Zillow Group, Inc. - Class A Common Stock|Q|N|D|100|N|N
 ZGNX|Zogenix, Inc. - Common Stock|G|N|N|100|N|N
-ZHNE|Zhone Technologies, Inc. - Common Stock|S|N|N|100|N|N
 ZION|Zions Bancorporation - Common Stock|Q|N|N|100|N|N
 ZIONW|Zions Bancorporation - Warrants 05/21/2020|Q|N|N|100|N|N
 ZIONZ|Zions Bancorporation - Warrants|Q|N|N|100|N|N
@@ -3130,7 +3128,7 @@ ZWZZT|NASDAQ TEST STOCK|S|Y|N|100||N
 ZXYZ.A|Nasdaq Symbology Test Common Stock|Q|Y|N|100||N
 ZXZZT|NASDAQ TEST STOCK|G|Y|N|100||N
 ZYNE|Zynerba Pharmaceuticals, Inc. - Common Stock|G|N|N|100|N|N
-File Creation Time: 0909201621:34|||||
+File Creation Time: 0912201609:30|||||
 ACT Symbol|Security Name|Exchange|CQS Symbol|ETF|Round Lot Size|Test Issue|NASDAQ Symbol
 A|Agilent Technologies, Inc. Common Stock|N|A|N|100|N|A
 AA|Alcoa Inc. Common Stock|N|AA|N|100|N|AA
@@ -3586,7 +3584,7 @@ BGC|General Cable Corporation Common Stock|N|BGC|N|100|N|BGC
 BGCA|BGC Partners, Inc. 8.125% Senior Notes due 2042|N|BGCA|N|100|N|BGCA
 BGE$B|Bge Cap Trust II 6.20% Trust Preferred Securities|N|BGEpB|N|100|N|BGE-B
 BGG|Briggs & Stratton Corporation Common Stock|N|BGG|N|100|N|BGG
-BGH|Babson Capital Global Short Duration High Yield Fund Common Shares of Beneficial Interests|N|BGH|N|100|N|BGH
+BGH|Barings Global Short Duration High Yield Fund Common Shares of Beneficial Interests|N|BGH|N|100|N|BGH
 BGI|Birks Group Inc. Common Stock|A|BGI|N|100|N|BGI
 BGR|BlackRock Energy and Resources Trust|N|BGR|N|100|N|BGR
 BGS|B&G Foods, Inc. B&G Foods, Inc. Common Stock|N|BGS|N|100|N|BGS
@@ -6084,7 +6082,7 @@ MCA|Blackrock MuniYield California Quality Fund, Inc. Common Stock|N|MCA|N|100|N
 MCC|Medley Capital Corporation Common Stock|N|MCC|N|100|N|MCC
 MCD|McDonald's Corporation Common Stock|N|MCD|N|100|N|MCD
 MCF|Contango Oil & Gas Company Common Stock|A|MCF|N|100|N|MCF
-MCI|Babson Capital Corporate Investors Common Stock|N|MCI|N|100|N|MCI
+MCI|Barings Corporate Investors Common Stock|N|MCI|N|100|N|MCI
 MCK|McKesson Corporation Common Stock|N|MCK|N|100|N|MCK
 MCN|Madison Covered Call & Equity Strategy Fund Common Stock|N|MCN|N|100|N|MCN
 MCO|Moody's Corporation Common Stock|N|MCO|N|100|N|MCO
@@ -6243,7 +6241,7 @@ MPC|Marathon Petroleum Corporation Common Stock|N|MPC|N|100|N|MPC
 MPG|Metaldyne Performance Group Inc. Common Stock|N|MPG|N|100|N|MPG
 MPLX|MPLX LP Common Units Representing Limited Partner Interests|N|MPLX|N|100|N|MPLX
 MPSX|Multi Packaging Solutions International Limited Common Shares|N|MPSX|N|100|N|MPSX
-MPV|Babson Capital Participation Investors Common Stock|N|MPV|N|100|N|MPV
+MPV|Barings Participation Investors Common Stock|N|MPV|N|100|N|MPV
 MPW|Medical Properties Trust, Inc. common stock|N|MPW|N|100|N|MPW
 MPX|Marine Products Corporation Common Stock|N|MPX|N|100|N|MPX
 MQT|Blackrock MuniYield Quality Fund II, Inc. Common Stock|N|MQT|N|100|N|MQT
@@ -6336,7 +6334,7 @@ MZF|Managed Duration Investment Grade Municipal Fund|N|MZF|N|100|N|MZF
 MZZ|ProShares UltraShort MidCap400|P|MZZ|Y|100|N|MZZ
 N|Netsuite Inc Common Stock|N|N|N|100|N|N
 NAC|Nuveen California Dividend Advantage Municipal Fund Common Stock|N|NAC|N|100|N|NAC
-NAD|Nuveen Dividend Advantage Municipal Fund Common Stock|N|NAD|N|100|N|NAD
+NAD|Nuveen Quality Municipal Income Fund Common Stock|N|NAD|N|100|N|NAD
 NADL|North Atlantic Drilling Ltd. Common Shares|N|NADL|N|100|N|NADL
 NAIL|Direxion Daily Homebuilders & Supplies Bull 3X Shares|P|NAIL|Y|100|N|NAIL
 NAK|Northern Dynasty Minerals, Ltd. Common Stock|A|NAK|N|100|N|NAK
@@ -6374,7 +6372,7 @@ NCZ|AllianzGI Convertible & Income Fund II Common Shares of Beneficial Interest|
 NDP|Tortoise Energy Independence Fund, Inc. Common Stock|N|NDP|N|100|N|NDP
 NDRO|Enduro Royalty Trust Trust Units representing beneficial interest in the trust|N|NDRO|N|100|N|NDRO
 NE|Noble Corporation Ordinary Shares (UK)|N|NE|N|100|N|NE
-NEA|Nuveen AMT-Free Municipal Income Fund Common Shares of Beneficial Interest Par Value $.01|N|NEA|N|100|N|NEA
+NEA|Nuveen AMT-Free Quality Municipal Income Fund Common Shares of Beneficial Interest Par Value $.01|N|NEA|N|100|N|NEA
 NEAR|iShares Short Maturity Bond ETF|Z|NEAR|Y|100|N|NEAR
 NEE|NextEra Energy, Inc. Common Stock|N|NEE|N|100|N|NEE
 NEE$C|FPL Group, Inc. 5 7/8% Preferred Trust Securities|N|NEEpC|N|100|N|NEE-C
@@ -6444,7 +6442,6 @@ NMK$B|Niagara Mohawk Holdings, Inc. Preferred Stock|N|NMKpB|N|10|N|NMK-B
 NMK$C|Niagara Mohawk Holdings, Inc. Preferred Stock|N|NMKpC|N|10|N|NMK-C
 NML|Neuberger Berman MLP Income Fund Inc. Common Stock|A|NML|N|100|N|NML
 NMM|Navios Maritime Partners LP Common Units Representing Limited Partner Interests|N|NMM|N|100|N|NMM
-NMO|Nuveen Municipal Market Opportunity Fund, Inc. Common Stock|N|NMO|N|100|N|NMO
 NMR|Nomura Holdings Inc ADR American Depositary Shares|N|NMR|N|100|N|NMR
 NMS|Nuveen Minnesota Municipal Income Fund Common Shares of Beneficial Interest|N|NMS|N|100|N|NMS
 NMT|Nuveen Massachusetts Premium Income Municipal Fund Common Stock|N|NMT|N|100|N|NMT
@@ -6471,19 +6468,13 @@ NORW|Global X MSCI Norway ETF|P|NORW|Y|100|N|NORW
 NOV|National Oilwell Varco, Inc. Common Stock|N|NOV|N|100|N|NOV
 NOW|ServiceNow, Inc. Common Stock|N|NOW|N|100|N|NOW
 NP|Neenah Paper, Inc. Common Stock|N|NP|N|100|N|NP
-NPF|Nuveen Premier Municipal Income Fund, Inc. Common Stock|N|NPF|N|100|N|NPF
-NPI|Nuveen Premium Income Municipal Fund, Inc. Common Stock|N|NPI|N|100|N|NPI
 NPK|National Presto Industries, Inc. Common Stock|N|NPK|N|100|N|NPK
-NPM|Nuveen Premium Income Municipal Fund II, Inc. Common Stock|N|NPM|N|100|N|NPM
 NPN|Nuveen Pennsylvania Municipal Value Fund Common Shares of Beneficial Interest|A|NPN|N|100|N|NPN
 NPO|EnPro Industries Inc|N|NPO|N|100|N|NPO
-NPP|Nuveen Performance Plus Municipal Fund, Inc. Common Stock|N|NPP|N|100|N|NPP
 NPTN|NeoPhotonics Corporation Common Stock|N|NPTN|N|100|N|NPTN
 NPV|Nuveen Virginia Premium Income Municipal Fund Common Stock|N|NPV|N|100|N|NPV
 NQ|NQ Mobile Inc. American Depositary Shares, each representing five Class A common shares|N|NQ|N|100|N|NQ
-NQM|Nuveen Investment Quality Municipal Fund, Inc. Common Stock|N|NQM|N|100|N|NQM
 NQP|Nuveen Pennsylvania Investment Quality Municipal Fund, Inc. Common Stock|N|NQP|N|100|N|NQP
-NQS|Nuveen Select Quality Municipal Fund, Inc. Common Stock|N|NQS|N|100|N|NQS
 NR|Newpark Resources, Inc. Common Stock|N|NR|N|100|N|NR
 NRE|NorthStar Realty Europe Corp. Common Stock|N|NRE|N|100|N|NRE
 NRF|NorthStar Realty Finance Corp. Common Stock (New)|N|NRF|N|100|N|NRF
@@ -8306,7 +8297,7 @@ ZEN|Zendesk, Inc. Common Stock|N|ZEN|N|100|N|ZEN
 ZF|Zweig Fund, Inc. (The) Common Stock|N|ZF|N|100|N|ZF
 ZFC|ZAIS Financial Corp. Common Stock|N|ZFC|N|100|N|ZFC
 ZLRG|ETFS Zacks Earnings Large-Cap U.S. Index Fund|P|ZLRG|Y|100|N|ZLRG
-ZMLP|Direxion Zacks MLP High Income Shares|P|ZMLP|Y|100|N|ZMLP
+ZMLP|Direxion Zacks MLP High Income Index Shares|P|ZMLP|Y|100|N|ZMLP
 ZNH|China Southern Airlines Company Limited Common Stock|N|ZNH|N|100|N|ZNH
 ZOES|Zoe's Kitchen, Inc. Common Stock|N|ZOES|N|100|N|ZOES
 ZPIN|Zhaopin Limited American Depositary Shares, each reprenting two Ordinary Shares|N|ZPIN|N|100|N|ZPIN
@@ -8318,4 +8309,4 @@ ZTR|Zweig Total Return Fund, Inc. (The) Common Stock|N|ZTR|N|100|N|ZTR
 ZTS|Zoetis Inc. Class A Common Stock|N|ZTS|N|100|N|ZTS
 ZVV|NYSE ARCA test stock|P|ZVV|N|100|Y|ZVV
 ZX|China Zenix Auto International Limited American Depositary Shares, each representing four ordinary shares.|N|ZX|N|100|N|ZX
-File Creation Time: 0909201621:34||||||
+File Creation Time: 0912201609:30||||||

@@ -1,0 +1,188 @@
+INFO:Logger:Using 2016-09-12 as today.
+INFO:Logger:Using 2016-09-12 as most recent trading day.
+INFO:Logger:Starting ichimoku screener
+INFO:Logger:Filter Settings: {'volume_min': '400000', 'pe_min': '0', 'pe_max': '100', 'market_cap_min': '500000000', 'min_stock_value': '1'}
+INFO:Logger:Found 8311 tickers using ftp
+INFO:Logger:Analyzing ticker: A
+INFO:Logger:Filtered data for A
+INFO:Logger:Analyzing ticker: AA
+INFO:Logger:Filtered data for AA
+INFO:Logger:Analyzing ticker: AAAP
+INFO:Logger:Filtered data for AAAP
+INFO:Logger:Analyzing ticker: AAC
+INFO:Logger:Filtered data for AAC
+INFO:Logger:Analyzing ticker: AADR
+INFO:Logger:Filtered data for AADR
+INFO:Logger:Analyzing ticker: AAL
+INFO:Logger:Filtered data for AAL
+INFO:Logger:Analyzing ticker: AAMC
+INFO:Logger:Filtered data for AAMC
+INFO:Logger:Analyzing ticker: AAME
+INFO:Logger:Filtered data for AAME
+INFO:Logger:Analyzing ticker: AAN
+INFO:Logger:Filtered data for AAN
+INFO:Logger:Analyzing ticker: AAOI
+INFO:Logger:Filtered data for AAOI
+INFO:Logger:Analyzing ticker: AAON
+INFO:Logger:Filtered data for AAON
+INFO:Logger:Analyzing ticker: AAP
+INFO:Logger:Filtered data for AAP
+INFO:Logger:Analyzing ticker: AAPC
+INFO:Logger:Filtered data for AAPC
+INFO:Logger:Analyzing ticker: AAPL
+INFO:Logger:Filtered data for AAPL
+INFO:Logger:Analyzing ticker: AAT
+INFO:Logger:Filtered data for AAT
+INFO:Logger:Analyzing ticker: AAU
+INFO:Logger:Filtered data for AAU
+INFO:Logger:Analyzing ticker: AAV
+INFO:Logger:Filtered data for AAV
+INFO:Logger:Analyzing ticker: AAWW
+INFO:Logger:Filtered data for AAWW
+INFO:Logger:Analyzing ticker: AAXJ
+INFO:Logger:Filtered data for AAXJ
+INFO:Logger:Analyzing ticker: AB
+INFO:Logger:Filtered data for AB
+INFO:Logger:Analyzing ticker: ABAC
+INFO:Logger:Filtered data for ABAC
+INFO:Logger:Analyzing ticker: ABAX
+INFO:Logger:Filtered data for ABAX
+INFO:Logger:Analyzing ticker: ABB
+INFO:Logger:Filtered data for ABB
+INFO:Logger:Analyzing ticker: ABBV
+INFO:Logger:Filtered data for ABBV
+INFO:Logger:Analyzing ticker: ABC
+INFO:Logger:Filtered data for ABC
+INFO:Logger:Analyzing ticker: ABCB
+INFO:Logger:Filtered data for ABCB
+INFO:Logger:Analyzing ticker: ABCD
+INFO:Logger:Filtered data for ABCD
+INFO:Logger:Analyzing ticker: ABCO
+INFO:Logger:Filtered data for ABCO
+INFO:Logger:Analyzing ticker: ABDC
+INFO:Logger:Filtered data for ABDC
+INFO:Logger:Analyzing ticker: ABE
+INFO:Logger:Filtered data for ABE
+INFO:Logger:Analyzing ticker: ABEO
+INFO:Logger:Filtered data for ABEO
+INFO:Logger:Analyzing ticker: ABEOW
+INFO:Logger:Filtered data for ABEOW
+INFO:Logger:Analyzing ticker: ABEV
+INFO:Logger:Filtered data for ABEV
+INFO:Logger:Analyzing ticker: ABG
+INFO:Logger:Filtered data for ABG
+INFO:Logger:Analyzing ticker: ABIL
+INFO:Logger:Filtered data for ABIL
+INFO:Logger:Analyzing ticker: ABIO
+INFO:Logger:Filtered data for ABIO
+INFO:Logger:Analyzing ticker: ABM
+INFO:Logger:Filtered data for ABM
+INFO:Logger:Analyzing ticker: ABMD
+INFO:Logger:Filtered data for ABMD
+INFO:Logger:Analyzing ticker: ABR
+INFO:Logger:Filtered data for ABR
+INFO:Logger:Analyzing ticker: ABRN
+INFO:Logger:Filtered data for ABRN
+INFO:Logger:Analyzing ticker: ABT
+INFO:Logger:Filtered data for ABT
+INFO:Logger:Analyzing ticker: ABTL
+INFO:Logger:Filtered data for ABTL
+INFO:Logger:Analyzing ticker: ABTX
+INFO:Logger:Filtered data for ABTX
+INFO:Logger:Analyzing ticker: ABUS
+INFO:Logger:Filtered data for ABUS
+INFO:Logger:Analyzing ticker: ABX
+INFO:Logger:Filtered data for ABX
+INFO:Logger:Analyzing ticker: ABY
+INFO:Logger:Filtered data for ABY
+INFO:Logger:Analyzing ticker: AC
+INFO:Logger:Filtered data for AC
+INFO:Logger:Analyzing ticker: ACAD
+INFO:Logger:Filtered data for ACAD
+INFO:Logger:Analyzing ticker: ACAS
+INFO:Logger:Filtered data for ACAS
+INFO:Logger:Analyzing ticker: ACAT
+INFO:Logger:Filtered data for ACAT
+INFO:Logger:Analyzing ticker: ACBI
+INFO:Logger:Filtered data for ACBI
+INFO:Logger:Analyzing ticker: ACC
+INFO:Logger:Filtered data for ACC
+INFO:Logger:Analyzing ticker: ACCO
+INFO:Logger:Filtered data for ACCO
+INFO:Logger:Analyzing ticker: ACET
+INFO:Logger:Filtered data for ACET
+INFO:Logger:Analyzing ticker: ACFC
+INFO:Logger:Filtered data for ACFC
+INFO:Logger:Analyzing ticker: ACGL
+INFO:Logger:Filtered data for ACGL
+INFO:Logger:Analyzing ticker: ACH
+INFO:Logger:Filtered data for ACH
+INFO:Logger:Analyzing ticker: ACHC
+INFO:Logger:Filtered data for ACHC
+INFO:Logger:Analyzing ticker: ACHN
+INFO:Logger:Filtered data for ACHN
+INFO:Logger:Analyzing ticker: ACIA
+INFO:Logger:Filtered data for ACIA
+INFO:Logger:Analyzing ticker: ACIM
+INFO:Logger:Filtered data for ACIM
+INFO:Logger:Analyzing ticker: ACIW
+INFO:Logger:Filtered data for ACIW
+INFO:Logger:Analyzing ticker: ACLS
+INFO:Logger:Filtered data for ACLS
+INFO:Logger:Analyzing ticker: ACM
+INFO:Logger:Filtered data for ACM
+INFO:Logger:Analyzing ticker: ACN
+INFO:Logger:Filtered data for ACN
+INFO:Logger:Analyzing ticker: ACNB
+INFO:Logger:Filtered data for ACNB
+INFO:Logger:Analyzing ticker: ACOR
+INFO:Logger:Filtered data for ACOR
+INFO:Logger:Analyzing ticker: ACP
+INFO:Logger:Filtered data for ACP
+INFO:Logger:Analyzing ticker: ACPW
+INFO:Logger:Filtered data for ACPW
+INFO:Logger:Analyzing ticker: ACRE
+INFO:Logger:Filtered data for ACRE
+INFO:Logger:Analyzing ticker: ACRS
+INFO:Logger:Filtered data for ACRS
+INFO:Logger:Analyzing ticker: ACRX
+INFO:Logger:Filtered data for ACRX
+INFO:Logger:Analyzing ticker: ACSF
+INFO:Logger:Filtered data for ACSF
+INFO:Logger:Analyzing ticker: ACST
+INFO:Logger:Filtered data for ACST
+INFO:Logger:Analyzing ticker: ACT Symbol
+ERROR:Logger:Daily data not found for ACT Symbol
+INFO:Logger:Analyzing ticker: ACTA
+INFO:Logger:Filtered data for ACTA
+INFO:Logger:Analyzing ticker: ACTG
+INFO:Logger:Filtered data for ACTG
+INFO:Logger:Analyzing ticker: ACTS
+INFO:Logger:Filtered data for ACTS
+INFO:Logger:Analyzing ticker: ACTX
+INFO:Logger:Filtered data for ACTX
+INFO:Logger:Analyzing ticker: ACU
+INFO:Logger:Filtered data for ACU
+INFO:Logger:Analyzing ticker: ACUR
+INFO:Logger:Filtered data for ACUR
+INFO:Logger:Analyzing ticker: ACV
+INFO:Logger:Filtered data for ACV
+INFO:Logger:Analyzing ticker: ACW
+INFO:Logger:Filtered data for ACW
+INFO:Logger:Analyzing ticker: ACWF
+INFO:Logger:Filtered data for ACWF
+INFO:Logger:Analyzing ticker: ACWI
+INFO:Logger:Filtered data for ACWI
+INFO:Logger:Analyzing ticker: ACWV
+INFO:Logger:Filtered data for ACWV
+INFO:Logger:Analyzing ticker: ACWX
+INFO:Logger:Filtered data for ACWX
+INFO:Logger:Analyzing ticker: ACXM
+INFO:Logger:Filtered data for ACXM
+INFO:Logger:Analyzing ticker: ACY
+INFO:Logger:Filtered data for ACY
+INFO:Logger:Analyzing ticker: ADAP
+INFO:Logger:Filtered data for ADAP
+INFO:Logger:Analyzing ticker: ADBE
+INFO:Logger:Filtered data for ADBE
+INFO:Logger:Analyzing ticker: ADC

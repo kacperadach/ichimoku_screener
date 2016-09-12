@@ -12,8 +12,8 @@ LAST_TRADING_DAY = get_most_recent_trading_day()
 def get_stock_data(ticker):
     try:
         s = Share(ticker)
-        today = datetime.today()
-        start_date = datetime.today() - timedelta(days=150)
+        today = datetime.strptime(LAST_TRADING_DAY, '%Y-%m-%d')
+        start_date = today - timedelta(days=151)
         today_string = today.isoformat().split("T")[0]
         start_date_string = start_date.isoformat().split("T")[0]
         data = s.get_historical(start_date_string, today_string)
