@@ -11,6 +11,7 @@ from EmailSender import get_message_body
 COMMASPACE = ', '
 
 a = read_daily_report()
+print a
 # try:
 #     msg = MIMEMultipart()
 #     msg['Subject'] = 'Ichimoku stock screener for {}'.format(datetime.now().isoformat().split("T")[0])

@@ -5,7 +5,18 @@ from urllib2 import Request, urlopen, URLError
 from ftplib import FTP
 
 from Logger import get_logger
-from Constants import FILES, SPECIFIC_PATH, IGNORED_STRINGS, FTP_ADDRESS, FTP_CWD, NASDAQ_FILE, OTHER_FILE, FTP_DELIMITER, FILTERED_SYMBOLS
+from Constants import FILES, \
+    SPECIFIC_PATH, \
+    IGNORED_STRINGS, \
+    FTP_ADDRESS, \
+    FTP_CWD, \
+    NASDAQ_FILE, \
+    OTHER_FILE, \
+    FTP_DELIMITER, \
+    FILTERED_SYMBOLS, \
+    EXCHANGES, \
+    API_URL, \
+    TICKERS_FOLDER
 
 logger = get_logger()
 
@@ -39,34 +50,47 @@ def _write_all_tickers_from_ftp(base, specific):
     except:
         logger.error("Error retrieving tickers from NASDAQ ftp")
 
-def get_all_tickers_from_api():
+def get_all_tickers_from_api(file_path=None, exchanges=EXCHANGES):
     all_tickers = []
-    for exchange in ('nasdaq', 'nyse', 'amex'):
-        request = Request(get_api_url(exchange))
+    for exchange in exchanges:
         try:
-            response = urlopen(request)
-            tickers = response.read()
-            _write_tickers_to_file(exchange, tickers)
-            ticker_list = tickers.split("\n")
-            for ticker in ticker_list:
-                try:
-                    ticker_string = findall('"([^"]*)"', ticker)[0]
-                    if not ticker_string.lower() == 'symbol':
-                        all_tickers.append(ticker_string)
-                except IndexError:
-                    continue
+            tickers = get_api_response(exchange)
+            _write_tickers_to_file(exchange, tickers, file_path)
+            ticker_list = extract_tickers_from_api_response(tickers)
+            all_tickers += ticker_list
         except URLError:
             logger.error("Error retrieving tickers from API")
     logger.info("Found {} tickers using api".format(len(all_tickers)))
-    return _filter_all_tickers(all_tickers)
+    return _filter_all_tickers(map(lambda x: x.split(",")[0].replace('"', ''), all_tickers))
 
-def _write_tickers_to_file(exchange, file_data_string):
-   file_path = path.join(path.join(path.dirname(path.abspath(__file__)), 'tickers'), (exchange + '.txt'))
-   with open(file_path, 'w') as f:
+def extract_tickers_from_api_response(ticker_list):
+    all_tickers = []
+    ticker_list = ticker_list.split("\n")
+    for ticker in ticker_list:
+        try:
+            ticker_string = findall('"([^"]*)"', ticker)[0]
+            if not ticker_string.lower() == 'symbol':
+                all_tickers.append(ticker_string)
+        except IndexError:
+            continue
+    return ticker_list
+
+def get_api_response(exchange):
+    request = Request(get_api_url(exchange))
+    response = urlopen(request)
+    return response.read()
+
+
+def _write_tickers_to_file(exchange, file_data_string, file_path=None):
+    if not file_path:
+        file_path = path.join(path.join(path.dirname(path.abspath(__file__)), TICKERS_FOLDER), (exchange + '.txt'))
+    else:
+        file_path = path.join(file_path, exchange + '.txt')
+    with open(file_path, 'w') as f:
        f.write(file_data_string)
 
 def get_api_url(exchange):
-    return 'http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange={}&render=download'.format(exchange)
+    return API_URL.format(exchange)
 
 
 def get_all_tickers_from_file():

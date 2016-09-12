@@ -3,12 +3,15 @@ import logging
 from os import path, mkdir, rmdir, listdir, environ
 from shutil import rmtree
 
-environ['']
+environ['TESTING'] = 'True'
 
 from GetStockTickers import _write_all_tickers_from_ftp, \
-    _pull_all_tickers_from_file,\
-    _filter_all_tickers,\
-    get_all_tickers_from_ftp
+    _pull_all_tickers_from_file, \
+    _filter_all_tickers, \
+    get_all_tickers_from_ftp, \
+    get_all_tickers_from_api, \
+    extract_tickers_from_api_response
+
 
 BASE_PATH = path.dirname(path.abspath(__file__))
 SPECIFIC = 'temp'
@@ -55,6 +58,19 @@ class TestGetStockTickers(unittest.TestCase):
         ticker_list = ('BBA', 'ABC^D', 'BRK.A', 'POP', '$CGIX')
         filtered_list = _filter_all_tickers(ticker_list)
         self.assertTrue(len(filtered_list) == 2)
+
+    def test_get_all_tickers_from_ftp(self):
+        tempDirFiles = self._get_all_files_in_temp()
+        self.assertTrue(len(tempDirFiles) == 0)
+        all_tickers = get_all_tickers_from_ftp(BASE_PATH, SPECIFIC_PATH)
+        self.assertTrue(len(all_tickers) > 5000)
+
+    def test_get_all_tickers_from_api(self):
+        tempDirFiles = self._get_all_files_in_temp()
+        self.assertTrue(len(tempDirFiles) == 0)
+        all_tickers = get_all_tickers_from_api(file_path=path.join(BASE_PATH, SPECIFIC))
+        a = 1
+
 
 
 

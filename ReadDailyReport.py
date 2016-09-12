@@ -3,8 +3,8 @@ from os import path
 
 from Constants import DAILY_REPORTS_FOLDER, DAILY_REPORTS_ENDING
 
-def read_daily_report(report_path=None):
-    if not report_path:
+def read_daily_report(day_of_report=None):
+    if not day_of_report:
         report_path = get_default_file_path()
     f = open(report_path, 'r')
     lines = remove_unnecessary_lines(f.readlines())

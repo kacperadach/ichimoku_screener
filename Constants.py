@@ -17,6 +17,12 @@ TRADING_HOLIDAYS = [
     date(2017, 12, 25)
 ]
 
+TICKERS_FOLDER = 'tickers'
+
+API_URL = 'http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange={}&render=download'
+
+EXCHANGES = ('nasdaq', 'nyse', 'amex')
+
 COMMASPACE = ', '
 
 DAILY_REPORTS_FOLDER = 'daily_reports'

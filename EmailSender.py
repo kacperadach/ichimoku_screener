@@ -19,7 +19,6 @@ def send_email(ichi_dict):
     message_body = get_message_body(ichi_dict)
     write_daily_report(message_body)
     logger.info("Wrote Daily Report")
-    logger.info("Sending email, {} tickers found.".format(sum(len(v) for v in ichi_dict.itervalues())))
     send(ichi_dict, message_body)
 
 def send(ichi_dict, message_body):

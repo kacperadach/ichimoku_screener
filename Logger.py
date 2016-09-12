@@ -1,4 +1,4 @@
-from logging import basicConfig, INFO, getLogger, StreamHandler
+from logging import basicConfig, INFO, CRITICAL, getLogger, StreamHandler
 from datetime import datetime
 from os import listdir, path, remove, getenv
 from sys import stdout
@@ -24,6 +24,12 @@ def generate_logger():
             delete_old_log()
         file_name = datetime.now().isoformat().replace("T", "_").replace(":", "-").split(".")[0] + "_log.log"
         basicConfig(filename=path.join(BASE_PATH, "logs", file_name), level=INFO)
+        ch = StreamHandler(stdout)
+        logger = getLogger(__name__)
+        logger.addHandler(ch)
+        return logger
+    else:
+        basicConfig(level=CRITICAL)
         ch = StreamHandler(stdout)
         logger = getLogger(__name__)
         logger.addHandler(ch)

@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date, datetime
 from os import getenv
 
 from AnalyseIchimoku import analyze_ichimoku
@@ -8,7 +8,7 @@ from Logger import get_logger
 logger = get_logger()
 
 def run():
-    if datetime.today().weekday() not in (4, 5):
+    if date.today().weekday() not in (4, 5):
         logger.info("Starting ichimoku screener")
         start_time = datetime.now()
         logger.info("Filter Settings: {}".format(_get_filter_settings()))
@@ -16,6 +16,8 @@ def run():
         send_email(ichi_dict)
         end_time = datetime.now()
         logger.info("Finished screening. Total time: {}".format(end_time - start_time))
+    else:
+        logger.info("Not running screener on {}".format(date.today().isoformat()))
 
 def _get_filter_settings():
     return {
