@@ -1,10 +1,10 @@
 import unittest
-import logging
-from os import path, mkdir, rmdir, listdir, environ
+from os import path, mkdir, listdir, environ
 from shutil import rmtree
 
 environ['TESTING'] = 'True'
 
+from TestingConstants import TEMP_PATH, SPECIFIC, SPECIFIC_PATH, BASE_PATH
 from GetStockTickers import _write_all_tickers_from_ftp, \
     _pull_all_tickers_from_file, \
     _filter_all_tickers, \
@@ -12,16 +12,11 @@ from GetStockTickers import _write_all_tickers_from_ftp, \
     get_all_tickers_from_api, \
     extract_tickers_from_api_response
 
-
-BASE_PATH = path.dirname(path.abspath(__file__))
-SPECIFIC = 'temp'
-SPECIFIC_PATH = path.join(SPECIFIC, 'all_tickers.txt')
-TEMP_PATH = path.join(BASE_PATH, SPECIFIC)
-
-
 class TestGetStockTickers(unittest.TestCase):
 
     def setUp(self):
+        if path.exists(TEMP_PATH):
+            rmtree(TEMP_PATH)
         mkdir(TEMP_PATH)
 
     def tearDown(self):
@@ -69,11 +64,9 @@ class TestGetStockTickers(unittest.TestCase):
         tempDirFiles = self._get_all_files_in_temp()
         self.assertTrue(len(tempDirFiles) == 0)
         all_tickers = get_all_tickers_from_api(file_path=path.join(BASE_PATH, SPECIFIC))
-        a = 1
-
-
-
-
+        self.assertTrue(len(all_tickers) > 3000)
+        tempDirFiles = self._get_all_files_in_temp()
+        self.assertTrue(len(tempDirFiles) == 3)
 
 if __name__ == '__main__':
     unittest.main()

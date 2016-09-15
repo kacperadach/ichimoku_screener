@@ -24,10 +24,10 @@ def send_email(ichi_dict):
 def send(ichi_dict, message_body):
     logger.info("Sending email, {} tickers found.".format(sum(len(v) for v in ichi_dict.itervalues())))
     try:
+        family = get_email_addresses()
         msg = MIMEMultipart()
         msg['Subject'] = 'Ichimoku stock screener for {}'.format(date.today().isoformat())
         msg['From'] = environ['EMAIL_ADDRESS']
-        family = get_email_addresses()
         msg['To'] = COMMASPACE.join(family)
         msg.attach(message_body)
 

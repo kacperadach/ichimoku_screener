@@ -17,6 +17,16 @@ TRADING_HOLIDAYS = [
     date(2017, 12, 25)
 ]
 
+FILTER_DEFAULTS = {
+    'VOLUME_MIN': 400000,
+    'MIN_STOCK_VALUE': 1,
+    'MARKET_CAP_MIN': 1000000000,
+    'PE_MIN': 0,
+    'PE_MAX': 50
+}
+
+MIN_DATA_LEN = 104
+
 TICKERS_FOLDER = 'tickers'
 
 API_URL = 'http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange={}&render=download'

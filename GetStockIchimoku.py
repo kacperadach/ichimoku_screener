@@ -1,8 +1,8 @@
 from GetStockData import get_stock_data
 from CalculateIchimoku import calculate_ichimoku
 
-def get_stock_ichimoku(ticker):
-    data = get_stock_data(ticker)
+def get_stock_ichimoku(ticker, start_date, end_date):
+    data = get_stock_data(ticker, start_date, end_date)
     if not data:
         return None
     today_ichimoku = calculate_ichimoku(ticker, data)

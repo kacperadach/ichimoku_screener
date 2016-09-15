@@ -1,5 +1,6 @@
 from GetStockTickers import get_all_tickers_from_ftp
 from GetStockIchimoku import get_stock_ichimoku
+from GetStockData import get_time_period
 from Logger import get_logger
 
 logger = get_logger()
@@ -7,9 +8,10 @@ logger = get_logger()
 def analyze_ichimoku():
     cross_above, cross_inside, cross_below, price_leaving_cloud, cloud_fold = ([] for _ in range(5))
     tickers = get_all_tickers_from_ftp()
+    start_date, end_date = get_time_period()
     for t in tickers:
         logger.info("Analyzing ticker: {}".format(t))
-        ichimoku_data = get_stock_ichimoku(t)
+        ichimoku_data = get_stock_ichimoku(t, start_date, end_date)
         if not ichimoku_data:
             continue
         cross_above, cross_inside, cross_below, price_leaving_cloud, cloud_fold = classify_ichimoku(ichimoku_data, cross_above, cross_inside, cross_below, price_leaving_cloud, cloud_fold)
