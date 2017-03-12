@@ -20,8 +20,7 @@ def get_credentials():
     credential_dir = path.join(home_dir, '.credentials')
     if not path.exists(credential_dir):
         makedirs(credential_dir)
-    credential_path = path.join(credential_dir,
-                                   'sheets.googleapis.com-python-quickstart.json')
+    credential_path = path.join(credential_dir, 'sheets.googleapis.com-python-quickstart.json')
 
     store = file.Storage(credential_path)
     credentials = store.get()

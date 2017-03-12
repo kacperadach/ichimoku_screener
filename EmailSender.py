@@ -25,11 +25,14 @@ def send(ichi_dict, message_body):
     logger.info("Sending email, {} tickers found.".format(sum(len(v) for v in ichi_dict.itervalues())))
     try:
         family = get_email_addresses()
+        #family = ['kacperadach{}@gmail.com'.format(x) for x in range(34)]
+        logger.info(family)
         msg = MIMEMultipart()
         msg['Subject'] = 'Ichimoku stock screener for {}'.format(date.today().isoformat())
         msg['From'] = environ['EMAIL_ADDRESS']
         msg['To'] = COMMASPACE.join(family)
         msg.attach(message_body)
+        logger.info(msg)
 
         s = SMTP('smtp.gmail.com:587')  # standard address + port for using gmail as stmp
         s.ehlo()

@@ -1,7 +1,9 @@
 # adding this because my run config is not working
 import unittest
-from os import path, listdir
+from os import path, listdir, environ
 from TestingConstants import BASE_PATH, SPECIFIC_PATH
+
+environ['TESTING'] = 'True'
 
 suite = unittest.TestSuite()
 
